@@ -1,4 +1,8 @@
 :root {
+  --border-dark: 1px solid #363636;
+
+  --br-big: 10vmin;
+
   --lavender: #E1AFFE;
 }
 

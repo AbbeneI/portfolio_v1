@@ -1,0 +1,11 @@
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4vmin;
+
+    margin-top: 10vmin;
+}
+
+h2 {
+    text-align: left;
+}

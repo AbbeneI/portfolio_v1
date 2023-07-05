@@ -1,0 +1,24 @@
+.proj-item {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    padding: 0;
+
+    border: var(--border-dark);
+    border-radius: 5vmin;
+
+    text-align: left;
+
+    overflow: hidden;
+}
+
+.proj-info {
+    font-size: 1rem;
+    grid-column: 1/1;
+    padding: 5vmin;
+}
+
+.proj-img {
+    grid-column: 2/2;
+    background: grey;
+}

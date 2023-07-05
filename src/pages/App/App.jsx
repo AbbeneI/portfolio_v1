@@ -1,5 +1,7 @@
 import './App.css';
 import Hero from '../../components/sections/hero/hero';
+import Projects from '../../components/sections/projects/projects';
+
 import Navbar from '../../components/navbar/navbar';
 import NavbarLeft from '../../components/navbar-left/navbar-left';
 
@@ -14,6 +16,7 @@ function App() {
 
       <main className="App">
         <Hero />
+        <Projects />
         {/* <About />
         <Jobs />
         <Featured />
