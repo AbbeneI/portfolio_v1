@@ -1,15 +1,19 @@
 import './App.css';
-// import { Hero } from '../../components';
+import Hero from '../../components/sections/hero/hero';
+import Navbar from '../../components/navbar/navbar';
+import NavbarLeft from '../../components/navbar-left/navbar-left';
+
 
 function App() {
   return (
     <>
       <header className="App-header">
-
+        <Navbar />
+        <NavbarLeft />
       </header>
 
       <main className="App">
-        {/* <Hero /> */}
+        <Hero />
         {/* <About />
         <Jobs />
         <Featured />

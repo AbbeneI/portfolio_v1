@@ -1,0 +1,34 @@
+.side-nav-left {
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.side-nav {
+    position: fixed;
+    width: 10vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vmin;
+}
+
+.side-nav-left li {
+    font-size: 0.8rem;
+
+    text-align: center;
+
+    background: inherit;
+
+    border: 1px solid #363636;
+    border-radius: 4vmin;
+    padding: 5vmin 1.5vmin;
+    color: #eaeaea;
+
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.side-nav-left li {}

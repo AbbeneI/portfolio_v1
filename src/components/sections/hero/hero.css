@@ -1,0 +1,29 @@
+.hero {
+    border: 1px solid #363636;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    text-align: left;
+
+    padding: 10vmin;
+
+    border-radius: 10vmin;
+}
+
+.purple-text {
+    color: var(--lavender);
+}
+
+h2 {
+    color: #BEBEBE;
+    font-size: 13vmin;
+    margin: 0;
+}
+
+.pre-title {
+    font-size: 1rem;
+
+}
