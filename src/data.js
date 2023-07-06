@@ -4,44 +4,44 @@ export const projects = [
     {
         title: 'React Project',
         description: lipsum,
-        link: '',
+        deployedLink: '',
         tags: ['HTML5', 'CSS3', 'Greensock', 'JavaScript'],
         image: '',
         links: {
-            github: "",
-            codepen: "",
+            deployed: "https://github.com/AbbeneI/knucklebones",
+            codepen: "https://github.com/AbbeneI/knucklebones",
+            github: "https://github.com/AbbeneI/knucklebones",
         }
     },
     {
         title: 'Soundify',
         description: lipsum,
-        link: '',
         tags: ['Python', 'Express', 'Node.js', 'MongoDB', 'Mongoose'],
         image: '',
         links: {
-            github: "",
+            deployed: "",
             codepen: "",
+            github: "",
         }
     },
     {
         title: 'ReadMe',
         description: lipsum,
-        link: '',
         tags: ['HTML5', 'CSS3', 'Greensock', 'JavaScript'],
         image: '',
         links: {
-            github: "",
+            deployed: "",
             codepen: "",
+            github: "",
         }
     },
     {
         title: 'Knucklebones',
         description: lipsum,
-        link: '',
         tags: ['HTML5', 'CSS3', 'Greensock', 'JavaScript'],
         image: '',
         links: {
-            github: "",
+            github: "https://github.com/AbbeneI/knucklebones",
             codepen: "",
         }
     }

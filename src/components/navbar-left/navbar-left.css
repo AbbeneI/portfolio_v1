@@ -15,7 +15,7 @@
     gap: 3vmin;
 }
 
-.side-nav-left li {
+.side-nav-left a {
     font-size: 0.8rem;
 
     text-align: center;
@@ -30,5 +30,3 @@
     writing-mode: vertical-lr;
     transform: rotate(180deg);
 }
-
-.side-nav-left li {}

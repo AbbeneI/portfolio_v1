@@ -4,10 +4,8 @@ import { projects } from '../../../data';
 
 export default function Projects({ }) {
     return (
-        <>
-            <div class="projects">
-                <ProjectList projectData={projects} />
-            </div>
-        </>
+        <section class="projects">
+            <ProjectList projectData={projects} />
+        </section>
     )
 }

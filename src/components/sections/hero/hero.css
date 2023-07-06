@@ -1,5 +1,5 @@
 .hero {
-    border: 1px solid #363636;
+    border: var(--border-dark);
 
     display: flex;
     flex-direction: column;
@@ -13,17 +13,42 @@
     border-radius: 10vmin;
 }
 
+p {
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+sup,
+sub,
+.pronouns {
+    font-size: clamp(18px, 2vw, 40px);
+    color: var(--lavender);
+}
+
 .purple-text {
     color: var(--lavender);
 }
 
 h2 {
-    color: #BEBEBE;
-    font-size: 13vmin;
-    margin: 0;
+    font-size: 6.5vw;
+    font-size: clamp(51px, 6vw, 80px);
+    margin: 1vmin 0;
+    line-height: 1.2;
 }
 
 .pre-title {
     font-size: 1rem;
+    color: var(--white);
+}
 
+.description {
+    font-size: 1.8rem;
+}
+
+.hero div {
+    width: 100%;
+}
+
+span {
+    color: var(--text-dark);
 }

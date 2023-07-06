@@ -6,7 +6,7 @@ export default function projectList({ projectData }) {
 
     // ];
     const projectsList = projectData.map(
-        (project, idx) => <ProjectItem project={project} key={idx} />
+        (project, idx) => <ProjectItem project={project} idx={idx} />
     )
 
     return (
