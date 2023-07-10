@@ -1,7 +1,4 @@
 .proj-item {
-    display: grid;
-    grid-template-columns: 50% 50%;
-
     padding: 0;
 
     border: var(--border-dark);
@@ -10,6 +7,14 @@
     text-align: left;
 
     overflow: hidden;
+
+    transition: all 0.2s ease;
+}
+
+.proj-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: rgba(0, 0, 0, 0);
 }
 
 .proj-num {
@@ -70,3 +75,12 @@ h3 {
 
     width: 50%;
 }
+
+.proj-link {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.proj-item:hover {}

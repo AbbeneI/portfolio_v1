@@ -12,31 +12,38 @@ export default function projectItem({ project, idx }) {
     );
 
     return (
-        <div className="proj-item">
-            <div className="proj-info">
-                <div className="proj-num">
-                    <span className="purple-text">0{idx + 1}</span>
-                </div>
-                <h3>
-                    {project.title}
-                </h3>
-                <p className="proj-desc">
-                    {project.description}
-                </p>
-                <div className="proj-tags-container">
-                    {projTags}
-                </div>
-                <div className="proj-links-container">
-                    {project.links.github ? <GitHub link={project.links.github} /> : <></>}
-                    {project.links.codepen ? <CodePen link={project.links.codepen} /> : <></>}
-                    {project.links.deployed ? <ExternalLink link={project.links.deployed} /> : <></>}
 
+        <div className="proj-item">
+            <a className="proj-link">
+                <div className="proj-grid">
+
+                    <div className="proj-info">
+                        <div className="proj-num">
+                            <span className="purple-text">0{idx + 1}</span>
+                        </div>
+                        <h3>
+                            {project.title}
+                        </h3>
+                        <p className="proj-desc">
+                            {project.description}
+                        </p>
+                        <div className="proj-tags-container">
+                            {projTags}
+                        </div>
+                        <div className="proj-links-container">
+                            {project.links.github ? <GitHub link={project.links.github} /> : <></>}
+                            {project.links.codepen ? <CodePen link={project.links.codepen} /> : <></>}
+
+
+                        </div>
+                    </div>
+                    <div className="proj-img">
+                        <img src={project.image} />
+                    </div>
                 </div>
-            </div>
-            <div className="proj-img">
-                <img src={project.image} />
-            </div>
+            </a>
         </div>
+
     )
 }
 

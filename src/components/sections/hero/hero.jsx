@@ -13,7 +13,7 @@ export default function Hero({ }) {
 
             <h2>
                 <div>
-                    Ian Abbene <span className="pronouns">(they/them)</span> , <span>and I'm a</span>
+                    <span className="purple-text"> Ian Abbene </span><span className="pronouns">(they/them)</span> , <span>and I'm a</span>
                 </div>
                 <div>
                     front end developer.
@@ -27,7 +27,7 @@ export default function Hero({ }) {
             </div>
 
             <div>
-                <button>Button</button>
+                <a className="button" href="images/logo.png" download="Resume">Resume</a>
             </div>
         </section>
     )

@@ -18,15 +18,11 @@
 .side-nav-left a {
     font-size: 0.8rem;
 
-    text-align: center;
-
-    background: inherit;
-
     border: 1px solid #363636;
-    border-radius: 4vmin;
     padding: 5vmin 1.5vmin;
-    color: #eaeaea;
 
     writing-mode: vertical-lr;
     transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
 }

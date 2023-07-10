@@ -30,7 +30,6 @@ body {
 
     background-color: #1c1c1c;
     color: white;
-    padding: 5% 10% 10% 10%;
 }
 
 code {
@@ -46,13 +45,18 @@ h2 {
 }
 
 a {
+    cursor: pointer;
     background: var(--bg);
     text-decoration: none;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, filter 0.2s ease;
     color: var(--text-light);
 }
 
-a:hover {
+a.icon-link:hover svg {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(36deg) brightness(105%) contrast(101%);
+}
+
+a:not(.icon-link):hover {
     background: var(--dark-grey-light);
 }
 
@@ -64,7 +68,8 @@ p {
     font-size: 1rem;
 }
 
-button {
+button,
+.button {
     font-size: 1rem;
     border: var(--border-light);
     background: var(--bg);

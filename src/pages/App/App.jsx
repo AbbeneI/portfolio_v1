@@ -4,7 +4,7 @@ import './App.css';
 import Hero from '../../components/Sections/Hero/Hero';
 import Projects from '../../components/Sections/Projects/Projects';
 import Navbar from '../../components/Navbar/Navbar';
-import NavbarLeft from '../../components/navbar-left/navbar-left';
+import NavbarLeft from '../../components/NavbarLeft/NavbarLeft';
 import { Cursor } from '../../components/Cursor/Cursor';
 
 import { gsap } from "gsap";
@@ -40,35 +40,33 @@ function App() {
     // doesn't trigger a render!
     const innerWidth = window.innerWidth;
     const innerHeight = window.innerHeight;
-    // cursorRef.current.moveTo(innerWidth / 2, innerHeight / 2);
 
-    const onMove = ({ clientX, clientY }) => {
-      cursorRef.current.moveTo(clientX, clientY);
+    const onMove = (ev) => {
+      cursorRef.current.moveTo(ev.clientX, ev.clientY);
     };
 
     window.addEventListener("pointermove", onMove);
+
 
     return () => window.removeEventListener("pointermove", onMove);
   }, []);
 
   return (
     <>
-      <div id="smooth-wrapper" ref={main}>
-        <header className="App-header">
-          <Navbar />
-          <NavbarLeft />
-        </header>
-
-        <main className="App">
-          <Cursor ref={cursorRef} />
-          <Cursor />
-          <Hero />
-          <Projects />
-          {/* <About />
+      <header className="App-header">
+        <Navbar />
+        <NavbarLeft />
+      </header>
+      <div className="cursor-container">
+        <Cursor ref={cursorRef} />
+      </div>
+      <main className="App" ref={main}>
+        <Hero />
+        <Projects />
+        {/* <About />
         <Experience />
         <Contact /> */}
-        </main>
-      </div>
+      </main>
     </>
 
   );
