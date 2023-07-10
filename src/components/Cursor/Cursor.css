@@ -1,0 +1,7 @@
+.cursor {
+    position: absolute;
+    --x: 10px;
+    width: var(--x);
+    height: var(--x);
+    background: red;
+}

@@ -1,8 +1,8 @@
 import "./ProjectItem.css";
 import ProjectTag from "../ProjectTag/ProjectTag";
-import GitHub from "../icons/github";
-import CodePen from "../icons/codepen";
-import ExternalLink from "../icons/external";
+import GitHub from "../icons/Github";
+import CodePen from "../icons/Codepen";
+import ExternalLink from "../icons/External";
 
 
 
@@ -15,7 +15,7 @@ export default function projectItem({ project, idx }) {
         <div className="proj-item">
             <div className="proj-info">
                 <div className="proj-num">
-                    <span class="purple-text">0{idx + 1}</span>
+                    <span className="purple-text">0{idx + 1}</span>
                 </div>
                 <h3>
                     {project.title}

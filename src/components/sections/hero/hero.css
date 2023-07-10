@@ -39,10 +39,12 @@ h2 {
 .pre-title {
     font-size: 1rem;
     color: var(--white);
+    position: absolute;
 }
 
 .description {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+    line-height: 1.65;
 }
 
 .hero div {

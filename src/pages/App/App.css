@@ -5,6 +5,14 @@
   font-size: calc(10px + 2vmin);
 }
 
+.cursor {
+  border-radius: 50%;
+  background: red;
+  height: 10vmin;
+  width: 10vmin;
+  z-index: 1;
+}
+
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function navbarRight() {
 
     return (
-        <div class="logo-container">
+        <div className="logo-container">
 
             <li>Home</li>
             <li>About</li>
