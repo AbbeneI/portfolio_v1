@@ -57,3 +57,16 @@ h3 {
     height: var(--x);
     filter: invert(79%) sepia(23%) saturate(0%) hue-rotate(167deg) brightness(97%) contrast(81%);
 }
+
+.proj-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.proj-img img {
+
+    width: 50%;
+}

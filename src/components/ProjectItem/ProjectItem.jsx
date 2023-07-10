@@ -34,7 +34,7 @@ export default function projectItem({ project, idx }) {
                 </div>
             </div>
             <div className="proj-img">
-
+                <img src={project.image} />
             </div>
         </div>
     )
