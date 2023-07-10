@@ -3,6 +3,7 @@ const lipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec l
 export const projects = [
     {
         title: 'React Project',
+        subtitle: '',
         description: lipsum,
         deployedLink: '',
         tags: ['HTML5', 'CSS3', 'Greensock', 'JavaScript'],
@@ -15,8 +16,9 @@ export const projects = [
     },
     {
         title: 'Soundify',
-        description: lipsum,
-        tags: ['Python', 'Express', 'Node.js', 'MongoDB', 'Mongoose'],
+        subtitle: 'Role: Front End Development/Design Lead',
+        description: "Soundify is a full stack music playlist-sharing application created in a team of five over the course of a week. Soundify users can log in to search for playlists, artists, and albums and add them to their playlists. Soundify is built with Python and Django, connects to a Postgresql database hosted by AWS, and calls the Spotify API with the Spotipy Python library. It's coded with RESTful API calls and has full create, read, update, delete (CRUD) operations on playlists. The UI is designed in Figma and styled with a custom design system built using CSS3, including flexbox and grid layouts.",
+        tags: ['Spotify API', 'Python', 'Express', 'Node.js', 'MongoDB', 'Mongoose'],
         image: '',
         links: {
             deployed: "",

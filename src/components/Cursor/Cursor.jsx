@@ -1,26 +1,20 @@
 import './Cursor.css';
-import { useState, useEffect } from "react";
+import { forwardRef, useImperativeHandle, useRef } from "react";
+import { gsap } from 'gsap';
 
-export default function Cursor({ }) {
-    const [MousePosition, setMousePosition] = useState({});
+export const Cursor = forwardRef(function (props, ref) {
+    const cursorRef = useRef({});
 
-    useEffect(() => {
-
-        const updateMousePosition = (ev) => {
-            setMousePosition({ x: ev.clientX, y: ev.clientY })
-
+    useImperativeHandle(ref, () => {
+        // return the API
+        return {
+            moveTo(x, y) {
+                gsap.to(cursorRef.current, { x, y });
+            }
         };
-
-        window.addEventListener("pointermove", updateMousePosition);
-
-        return () => {
-            // cleanup code
-            window.removeEventListener("pointermove", updateMousePosition);
-        };
-
     }, []);
 
     return (
-        <div className="cursor" style={{ left: MousePosition.x, top: MousePosition.y }}></div>
+        <div className="cursor" ref={cursorRef}></div>
     );
-}
+})
