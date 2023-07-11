@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    gap: 4vmin;
 
     text-align: left;
 
@@ -13,9 +14,17 @@
     border-radius: 10vmin;
 }
 
-p {
+.hero div {
+    width: 100%;
+}
+
+.hero div * {
+    /* margin: 0; */
+}
+
+.description {
     line-height: 1.5;
-    margin: 1em 0;
+    margin: 0 0 .75em 0;
 }
 
 sup,
@@ -31,7 +40,7 @@ sub,
 
 h2 {
     font-size: 6.5vw;
-    font-size: clamp(51px, 6vw, 80px);
+    font-size: clamp(51px, 5vw, 80px);
     margin: 1vmin 0;
     line-height: 1.2;
 }
@@ -40,6 +49,7 @@ h2 {
     font-size: 1rem;
     color: var(--white);
     position: absolute;
+
 }
 
 .description {
@@ -47,9 +57,7 @@ h2 {
     line-height: 1.65;
 }
 
-.hero div {
-    width: 100%;
-}
+
 
 span {
     color: var(--text-dark);

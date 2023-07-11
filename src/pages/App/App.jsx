@@ -40,9 +40,8 @@ function App() {
     // doesn't trigger a render!
     const innerWidth = window.innerWidth;
     const innerHeight = window.innerHeight;
-
     const onMove = (ev) => {
-      cursorRef.current.moveTo(ev.clientX, ev.clientY);
+      cursorRef.current.moveTo(ev.clientX - 10, ev.clientY - 10);
     };
 
     window.addEventListener("pointermove", onMove);

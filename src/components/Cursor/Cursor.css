@@ -17,7 +17,7 @@
 }
 
 .cursor {
-    --x: 3vmin;
+    --x: 20px;
     width: var(--x);
     height: var(--x);
     border-radius: 50%;
