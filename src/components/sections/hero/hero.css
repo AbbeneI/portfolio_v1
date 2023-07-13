@@ -18,10 +18,6 @@
     width: 100%;
 }
 
-.hero div * {
-    /* margin: 0; */
-}
-
 .description {
     line-height: 1.5;
     margin: 0 0 .75em 0;
@@ -52,10 +48,6 @@ h2 {
 
 }
 
-.description {
-    font-size: 1.2rem;
-    line-height: 1.65;
-}
 
 
 

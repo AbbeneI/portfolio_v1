@@ -1,5 +1,3 @@
-const lipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lacus porttitor magna dignissim, vitae blandit quam commodo. Proin quis quam semper, finibus turpis auctor, egestas dolor. Etiam luctus fermentum dolor, pulvinar vulputate justo tincidunt nec.'
-
 export const projects = [
     {
         title: 'Portfolio Site',

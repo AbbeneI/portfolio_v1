@@ -10,11 +10,10 @@ export default function projectList({ projectData }) {
     )
 
     return (
-        <>
-            <h2>Projects</h2>
-            <div className="project-list">
-                {projectsList}
-            </div>
-        </>
+
+        <div className="project-list">
+            {projectsList}
+        </div>
+
     )
 }

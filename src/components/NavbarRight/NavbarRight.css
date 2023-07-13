@@ -9,7 +9,12 @@
     width: fit-content;
     display: flex;
     padding: 1vmin 1vmin;
-    /* border-radius: 1.5vmin; */
     justify-content: center;
     align-items: center;
+}
+
+.side-nav-right .icon {
+    --x: 2.5vmin;
+    width: var(--x);
+    height: var(--x);
 }

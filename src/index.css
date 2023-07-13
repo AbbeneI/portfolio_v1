@@ -46,10 +46,14 @@ h2 {
 
 a {
     cursor: pointer;
-    background: var(--bg);
+    /* background: var(--bg); */
     text-decoration: none;
     transition: background-color 0.2s ease, filter 0.2s ease;
     color: var(--text-light);
+}
+
+a:not(.icon-link):hover {
+    background: var(--dark-grey-light);
 }
 
 a.icon-link:hover svg,
@@ -61,17 +65,18 @@ svg {
     transition: filter 0.2s ease;
 }
 
-a:not(.icon-link):hover {
-    background: var(--dark-grey-light);
-}
+
 
 li {
     list-style: none;
 }
 
+
 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.65;
 }
+
 
 button,
 .button {
@@ -94,6 +99,7 @@ button:hover {
 
 section {
     margin-top: 10vmin;
+    text-align: left;
 }
 
 
@@ -107,12 +113,23 @@ html {
     width: 12px;
 }
 
+::-webkit-scrollbar:hover {
+    width: 12px;
+}
+
 ::-webkit-scrollbar-track {
     background: var(--bg);
 }
 
+::-webkit-scrollbar-track:hover {
+    background: var(--dark-grey);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-grey-light);
+}
+
 ::-webkit-scrollbar-thumb {
     background-color: var(--dark-grey);
-    /* border: 1px solid var(--dark-grey-light); */
     border-radius: 10px;
 }

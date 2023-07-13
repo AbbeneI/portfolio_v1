@@ -1,5 +1,4 @@
 import './Hero.css';
-import { useState, useEffect } from "react";
 
 export default function Hero({ }) {
 
@@ -22,7 +21,7 @@ export default function Hero({ }) {
 
             <div>
                 <p className="description">
-                    As a driven and innovative software engineer, I bring a wealth of experience from diverse industries, enabling me to excel both independently and collaboratively in teams. I am particularly passionate about user interface design and am committed to delivering impactful solutions that solve complex challenges.
+                    As a highly motivated and innovative software engineer, I bring a wealth of experience spanning diverse industries, allowing me to thrive both autonomously and within collaborative team settings. I am particularly passionate about user interface design and am committed to delivering impactful solutions that solve complex challenges.
                 </p>
             </div>
 

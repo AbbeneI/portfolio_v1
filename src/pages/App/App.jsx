@@ -3,9 +3,14 @@ import './App.css';
 
 import Hero from '../../components/Sections/Hero/Hero';
 import Projects from '../../components/Sections/Projects/Projects';
+import About from "../../components/Sections/About/About";
+import Contact from "../../components/Sections/Contact/Contact";
+
 import Navbar from '../../components/Navbar/Navbar';
 import NavbarLeft from '../../components/NavbarLeft/NavbarLeft';
 import NavbarRight from '../../components/NavbarRight/NavbarRight'
+
+import Footer from "../../components/Footer/Footer";
 
 import { Cursor } from '../../components/Cursor/Cursor';
 
@@ -62,13 +67,14 @@ function App() {
       <div className="cursor-container">
         <Cursor ref={cursorRef} />
       </div>
-      <main className="App" ref={main}>
+      <main className="main" ref={main}>
         <Hero />
         <Projects />
-        {/* <About />
-        <Experience />
-        <Contact /> */}
+        <About />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
 
   );
