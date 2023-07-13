@@ -1,8 +1,8 @@
 import "./ProjectItem.css";
 import ProjectTag from "../ProjectTag/ProjectTag";
-import GitHub from "../icons/Github";
-import CodePen from "../icons/Codepen";
-import External from "../icons/External";
+import GitHub from "../../Icons/Github";
+import CodePen from "../../Icons/Codepen";
+import External from "../../Icons/External";
 
 
 

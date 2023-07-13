@@ -1,9 +1,9 @@
 import "./NavbarRight.css"
 import { socialLinks } from "../../../data";
-import GitHub from "../icons/Github";
-import CodePen from "../icons/Codepen";
-import Medium from "../icons/Medium";
-import LinkedIn from "../icons/LinkedIn";
+import GitHub from "../../Icons/Github";
+import CodePen from "../../Icons/Codepen";
+import Medium from "../../Icons/Medium";
+import LinkedIn from "../../Icons/LinkedIn";
 
 export default function navbarRight() {
 
