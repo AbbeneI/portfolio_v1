@@ -1,5 +1,5 @@
 import { useState, useRef, useLayoutEffect, useEffect } from "react";
-import './App.css';
+import './App.css'; 
 
 import Hero from '../../components/Sections/Hero/Hero.jsx';
 import Projects from '../../components/Sections/Projects/Projects.jsx';

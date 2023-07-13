@@ -1,10 +1,8 @@
 import "./ProjectItem.css";
-import ProjectTag from "../ProjectTag/ProjectTag";
-import GitHub from "../Icons/Github";
-import CodePen from "../Icons/Codepen";
-import External from "../Icons/External";
-
-
+import ProjectTag from "../ProjectTag/ProjectTag.jsx";
+import GitHub from "../Icons/Github.jsx";
+import CodePen from "../Icons/Codepen.jsx";
+import External from "../Icons/External.jsx";
 
 export default function projectItem({ project, idx }) {
     const projTags = project.tags.map((tag, idx) =>
