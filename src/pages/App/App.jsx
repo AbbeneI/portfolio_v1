@@ -1,18 +1,18 @@
 import { useState, useRef, useLayoutEffect, useEffect } from "react";
 import './App.css';
 
-import Hero from '../../components/Sections/Hero/Hero';
-import Projects from '../../components/Sections/Projects/Projects';
-import About from "../../components/Sections/About/About";
-import Contact from "../../components/Sections/Contact/Contact";
+import Hero from '../../components/Sections/Hero/Hero.jsx';
+import Projects from '../../components/Sections/Projects/Projects.jsx';
+import About from "../../components/Sections/About/About.jsx";
+import Contact from "../../components/Sections/Contact/Contact.jsx";
 
-import Navbar from '../../components/Navbar/Navbar.js';
+import Navbar from '../../components/Navbar/Navbar.jsx';
 import NavbarLeft from '../../components/NavbarLeft/NavbarLeft.jsx';
 import NavbarRight from '../../components/NavbarRight/NavbarRight.jsx'
 
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/Footer/Footer.jsx";
 
-import { Cursor } from '../../components/Cursor/Cursor';
+import { Cursor } from '../../components/Cursor/Cursor.jsx';
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
