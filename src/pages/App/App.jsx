@@ -6,7 +6,7 @@ import Projects from '../../components/Sections/Projects/Projects';
 import About from "../../components/Sections/About/About";
 import Contact from "../../components/Sections/Contact/Contact";
 
-import Navbar from '../../Navbar/Navbar.js';
+import Navbar from '../../components/Navbar/Navbar.js';
 import NavbarLeft from '../../components/NavbarLeft/NavbarLeft.jsx';
 import NavbarRight from '../../components/NavbarRight/NavbarRight.jsx'
 
