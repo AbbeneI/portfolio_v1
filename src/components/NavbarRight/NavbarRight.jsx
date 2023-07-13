@@ -1,5 +1,5 @@
 import "./NavbarRight.css"
-import { socialLinks } from "../../data";
+import { socialLinks } from "../../../data";
 import GitHub from "../icons/Github";
 import CodePen from "../icons/Codepen";
 import Medium from "../icons/Medium";

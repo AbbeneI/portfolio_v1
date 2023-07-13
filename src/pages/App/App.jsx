@@ -6,9 +6,9 @@ import Projects from '../../components/Sections/Projects/Projects';
 import About from "../../components/Sections/About/About";
 import Contact from "../../components/Sections/Contact/Contact";
 
-import Navbar from '../../components/Navbar/Navbar';
-import NavbarLeft from '../../components/NavbarLeft/NavbarLeft';
-import NavbarRight from '../../components/NavbarRight/NavbarRight'
+import Navbar from '../../components/Navbar/Navbar.jsx';
+import NavbarLeft from '../../components/NavbarLeft/NavbarLeft.jsx';
+import NavbarRight from '../../components/NavbarRight/NavbarRight.jsx'
 
 import Footer from "../../components/Footer/Footer";
 
