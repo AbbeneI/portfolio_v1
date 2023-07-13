@@ -52,8 +52,13 @@ a {
     color: var(--text-light);
 }
 
-a.icon-link:hover svg {
+a.icon-link:hover svg,
+a.button:hover a.icon-link svg {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(36deg) brightness(105%) contrast(101%);
+}
+
+svg {
+    transition: filter 0.2s ease;
 }
 
 a:not(.icon-link):hover {

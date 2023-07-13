@@ -1,0 +1,15 @@
+.side-nav-right {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.side-nav-right a {
+    width: fit-content;
+    display: flex;
+    padding: 1vmin 1vmin;
+    /* border-radius: 1.5vmin; */
+    justify-content: center;
+    align-items: center;
+}

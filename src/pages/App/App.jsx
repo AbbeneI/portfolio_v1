@@ -5,6 +5,8 @@ import Hero from '../../components/Sections/Hero/Hero';
 import Projects from '../../components/Sections/Projects/Projects';
 import Navbar from '../../components/Navbar/Navbar';
 import NavbarLeft from '../../components/NavbarLeft/NavbarLeft';
+import NavbarRight from '../../components/NavbarRight/NavbarRight'
+
 import { Cursor } from '../../components/Cursor/Cursor';
 
 import { gsap } from "gsap";
@@ -55,6 +57,7 @@ function App() {
       <header className="App-header">
         <Navbar />
         <NavbarLeft />
+        <NavbarRight />
       </header>
       <div className="cursor-container">
         <Cursor ref={cursorRef} />

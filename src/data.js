@@ -33,7 +33,6 @@ export const projects = [
         image: '',
         links: {
             deployed: "https://mylibrary.fly.dev/",
-            codepen: "",
             github: "https://github.com/AbbeneI/ReadMe",
         }
     },
@@ -45,7 +44,13 @@ export const projects = [
         links: {
             deployed: "",
             github: "https://github.com/AbbeneI/knucklebones",
-            codepen: "",
         }
     }
 ]
+
+export const socialLinks = {
+    github: "https://github.com/AbbeneI",
+    linkedin: "https://linkedin.com/in/ian-abbene",
+    medium: "https://medium.com/@ianabbene_86410",
+    codepen: "https://codepen.io/IAbbene"
+}
