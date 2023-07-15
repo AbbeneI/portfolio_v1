@@ -1,6 +1,6 @@
 import './Projects.css';
 import ProjectList from '../../ProjectList/ProjectList';
-import { projects } from '../../data.js';
+import { projects } from '../../../data.js';
 
 export default function Projects({ }) {
     return (

@@ -13,7 +13,7 @@ export default function projectItem({ project, idx }) {
 
     return (
 
-        <div className="proj-item">
+        <div className="proj-item grey-bg">
             <a className="proj-link">
                 <div className="proj-grid">
 

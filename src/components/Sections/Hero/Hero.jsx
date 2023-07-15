@@ -3,7 +3,7 @@ import './Hero.css';
 export default function Hero({ }) {
 
     return (
-        <section className="hero">
+        <section className="hero grey-bg">
             <div>
                 <h1 className="pre-title" >
                     Hello! My name is

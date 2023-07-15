@@ -1,6 +1,4 @@
 .hero {
-    border: var(--border-dark);
-
     display: flex;
     flex-direction: column;
     justify-content: center;
