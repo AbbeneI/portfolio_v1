@@ -4,7 +4,7 @@
     div.proj-grid {
         grid-template-columns: 1fr;
         grid-auto-flow: column;
-
+        padding: 8vmin;
     }
 
     div.proj-img {
@@ -12,7 +12,15 @@
         grid-row: 1/1;
     }
 
-    div.proj-img img {}
+    div.proj-info {
+        padding: 0;
+    }
+
+    div.proj-img img {
+        height: 200px;
+        width: 200px;
+        border-radius: 4vmin;
+    }
 }
 
 .proj-item {
@@ -41,6 +49,7 @@
     font-size: 1rem;
     grid-column: 1/1;
     padding: 8vmin;
+
     display: flex;
     flex-direction: column;
     gap: 3vmin;

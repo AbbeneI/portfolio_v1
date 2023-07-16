@@ -1,5 +1,5 @@
 import { useState, useRef, useLayoutEffect, useEffect } from "react";
-import './App.css'; 
+import './App.css';
 
 import Hero from '../../components/Sections/Hero/Hero.jsx';
 import Projects from '../../components/Sections/Projects/Projects.jsx';
@@ -24,6 +24,14 @@ function App() {
   const main = useRef()
   const cursorRef = useRef()
 
+  const [cursorContent, setCursorContent] = useState('')
+
+  function randNum() {
+    let num = Math.floor(Math.random() * 3 + 1)
+    num = num.toString();
+    return num;
+  }
+
   // const scrollTo = () => {
   //   smoother.current.scrollTo('.box-c', true, 'center center');
   // };
@@ -43,19 +51,18 @@ function App() {
   //   return () => ctx.revert();
   // }, []);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     // doesn't trigger a render!
-    const innerWidth = window.innerWidth;
-    const innerHeight = window.innerHeight;
+
     const onMove = (ev) => {
       cursorRef.current.moveTo(ev.clientX - 10, ev.clientY - 10);
     };
 
     window.addEventListener("pointermove", onMove);
 
-
     return () => window.removeEventListener("pointermove", onMove);
   }, []);
+
 
   return (
     <>
@@ -65,13 +72,15 @@ function App() {
         <NavbarRight />
       </header>
       <div className="cursor-container">
-        <Cursor ref={cursorRef} />
+        <Cursor content={cursorContent} ref={cursorRef} setCursorContent={setCursorContent} />
       </div>
       <main className="main" ref={main}>
-        <Hero />
+        <Hero setCursorContent={setCursorContent} />
+        <button onClick={() => { setCursorContent(randNum) }}>set state</button>
+
         <Projects />
         <About />
-      </main>
+      </main >
       <footer>
         <Footer />
       </footer>

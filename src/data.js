@@ -4,7 +4,7 @@ export const projects = [
         subtitle: '',
         description: "My personal portfolio site, designed in Figma and coded in React.",
         deployedLink: '',
-        tags: ['HTML5', 'CSS3', 'Greensock', 'JavaScript'],
+        tags: ['HTML5', 'CSS3', 'Greensock', 'JavaScript', 'Figma'],
         image: '',
         links: {
             deployed: "",
@@ -26,7 +26,7 @@ export const projects = [
     },
     {
         title: 'ReadMe',
-        description: "A digital library application built with the Google Books API. This was my first project working with an API, and was a very fun challenge. The app uses Express, Node.js and Javascript to connect to a MongoDB database and store books the user selects via the Google Books API in bookshelves.",
+        description: "A digital library application built with the Google Books API. The app uses Express, Node.js and Javascript to connect to a MongoDB database and store books the user selects via the Google Books API in bookshelves.",
         tags: ['Google Books API', 'Python', 'Node.js', 'Postman', 'Express', 'MongoDB', 'Mongoose', 'Figma'],
         image: '',
         links: {
