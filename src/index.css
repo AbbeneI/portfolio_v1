@@ -5,18 +5,23 @@
     --br-big: 10vmin;
 
     --lavender: #E1AFFE;
-    --white: #fff;
-    --bg: #1C1C1C;
-    --dark-grey: #2c2c2c;
-    --dark-grey-light: #8c8c8c;
-    --dark-grey-light: #5c5c5cc1;
+    --lavender-filter: invert(77%) sepia(9%) saturate(3012%) hue-rotate(211deg) brightness(102%) contrast(99%);
+    /* --lavender: #B97EFC; */
+    --lav-dark: #B97EFC;
+    --white: #EAEAEA;
+    --bg: #1a151f;
+    --dark-grey: #212122;
+    --dark-grey: rgba(0, 0, 0, 0.2);
+    /* --dark-grey: #201b27; */
+    --dark-grey-light: #645873;
+    /* --dark-grey-light-filter: invert(40%) sepia(9%) saturate(1104%) hue-rotate(224deg) brightness(84%) contrast(86%); */
+    --dark-grey-light-filter: invert(59%) sepia(6%) saturate(1955%) hue-rotate(224deg) brightness(91%) contrast(80%);
+    /* it's this color ^^ #9682b0 */
+    /* --dark-grey-light: #5c5c5cc1; */
 
-    --text-light: #EAEAEA;
-    --text-dark: #BEBEBE;
+    --text-light: #d7d7d7;
+    --text-dark: #722a2a;
 }
-
-
-
 
 * {
     box-sizing: border-box;
@@ -31,7 +36,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 
     background-color: var(--bg);
-    color: white;
+    color: var(--text-light);
 }
 
 code {
@@ -46,19 +51,30 @@ h2 {
     margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
 a {
     cursor: pointer;
-    /* background: var(--bg); */
     text-decoration: none;
-    transition: background-color 0.2s ease, filter 0.2s ease;
-    color: var(--text-light);
+    transition: color 0.2s ease, filter 0.2s ease;
+    color: var(--lavender);
+}
+
+a.button {
+    text-decoration: none;
 }
 
 a:not(.icon-link):hover {
-    background: var(--dark-grey-light);
+    color: var(--white);
 }
 
-a.icon-link:hover svg,
+a.proj-link:hover svg,
+svg:hover,
 a.button:hover a.icon-link svg {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(36deg) brightness(105%) contrast(101%);
 }
@@ -68,14 +84,13 @@ svg {
 }
 
 
-
 li {
     list-style: none;
 }
 
 
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.65;
 }
 
@@ -84,24 +99,28 @@ button,
 .button {
     font-size: 1rem;
     border: var(--border-light);
-    background: var(--bg);
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 4vmin;
     padding: 1.5vmin 5vmin;
-    color: #eaeaea;
+    color: var(--lavender);
 
     cursor: pointer;
 
     transition: background-color 0.2s ease;
 }
 
+.button:hover,
 button:hover {
     background: var(--dark-grey-light);
-
 }
 
 section {
     margin-top: 10vmin;
     text-align: left;
+}
+
+span {
+    color: var(--dark-grey-light);
 }
 
 

@@ -4,10 +4,9 @@ import { gsap } from 'gsap';
 
 export const Cursor = forwardRef((props, ref) => {
     const el = useRef({});
-    // console.log("\n cursor props: ", props)
 
     let content = props.content;
-    // console.log("\ncontent: ", content)
+    let classList = props.classList;
 
     useImperativeHandle(ref, () => {
         // return the API
@@ -19,16 +18,19 @@ export const Cursor = forwardRef((props, ref) => {
     }, [props.content]);
 
     useEffect(() => {
-        function setContent(c) {
+        function setContent() {
             props.setCursorContent('new state')
+        }
+        function setClassList(list) {
+            props.setCursorClassList(list)
         }
     }, [])
 
     return (
         (content === '' ?
-            <div className="cursor" ref={el}>{content}</div>
+            <div className={"cursor " + classList} ref={el}></div>
             :
-            <div className="cursor content" ref={el}>{content}</div>
+            <div className={`cursor content ${classList}`} ref={el}>{content}</div>
         )
     );
 })

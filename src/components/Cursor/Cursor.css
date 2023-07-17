@@ -17,37 +17,46 @@
 }
 
 .cursor {
-    --x: 20px;
+    --x: 15px;
     width: var(--x);
     height: var(--x);
     border-radius: 50%;
 
-    background: var(--lavender);
+    background: #e8e8e8;
     transition: background 0.2s ease, height 0.2s ease, width 0.2s ease;
 }
 
 .cursor.content {
-    --x: 20px;
     width: 30px;
     height: 60px;
 
     padding: 0px;
     border: 0;
 
+    top: 1vmin;
+
     background: rgba(0, 0, 0, 0);
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-size: 2rem;
+    font-weight: 800;
+
+    mix-blend-mode: normal;
+    background-blend-mode: normal;
 }
 
 .cursor.content * {
     --x: 5vmin;
     max-height: var(--x);
     max-width: var(--x);
+}
 
-    border: 2px solid red;
-
-    mix-blend-mode: difference;
-    background-blend-mode: difference;
+.cursor.active {
+    --x: 50px;
+    width: var(--x);
+    height: var(--x);
+    background-color: #fff;
 }

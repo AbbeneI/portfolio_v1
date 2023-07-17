@@ -1,4 +1,4 @@
-import { useState, useRef, useLayoutEffect, useEffect } from "react";
+import { useState, useRef, useLayoutEffect } from "react";
 import './App.css';
 
 import Hero from '../../components/Sections/Hero/Hero.jsx';
@@ -7,7 +7,6 @@ import About from "../../components/Sections/About/About.jsx";
 import Contact from "../../components/Sections/Contact/Contact.jsx";
 
 import Navbar from '../../components/Navbar/Navbar.jsx';
-import NavbarLeft from '../../components/NavbarLeft/NavbarLeft.jsx';
 import NavbarRight from '../../components/NavbarRight/NavbarRight.jsx'
 
 import Footer from "../../components/Footer/Footer.jsx";
@@ -25,12 +24,7 @@ function App() {
   const cursorRef = useRef()
 
   const [cursorContent, setCursorContent] = useState('')
-
-  function randNum() {
-    let num = Math.floor(Math.random() * 3 + 1)
-    num = num.toString();
-    return num;
-  }
+  const [cursorClassList, setCursorClassList] = useState('')
 
   // const scrollTo = () => {
   //   smoother.current.scrollTo('.box-c', true, 'center center');
@@ -63,23 +57,43 @@ function App() {
     return () => window.removeEventListener("pointermove", onMove);
   }, []);
 
+  function handleMouseOver(e) {
+    // Set cursor class
+    if (e.target.nodeName === 'A' || e.target.nodeName === 'svg' || e.target.nodeName === 'path') {
+      setCursorClassList('active');
+    }
+    else {
+      setCursorClassList('');
+    }
+
+    // Set cursor content
+    if (e.target.className === 'purple-text') {
+      setCursorContent('(they/them)')
+    }
+    else {
+      setCursorContent('')
+    }
+  }
+
+  function handleMouseLeave() {
+    setCursorClassList('');
+  }
+
 
   return (
     <>
-      <header className="App-header">
+      <header className="App-header" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
         <Navbar />
-        <NavbarLeft />
         <NavbarRight />
       </header>
       <div className="cursor-container">
-        <Cursor content={cursorContent} ref={cursorRef} setCursorContent={setCursorContent} />
+        <Cursor content={cursorContent} classList={cursorClassList} ref={cursorRef} setCursorContent={setCursorContent} setCursorClassList={setCursorClassList} />
       </div>
-      <main className="main" ref={main}>
+      <main className="main" ref={main} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
         <Hero setCursorContent={setCursorContent} />
-        <button onClick={() => { setCursorContent(randNum) }}>set state</button>
-
         <Projects />
         <About />
+        <Contact />
       </main >
       <footer>
         <Footer />

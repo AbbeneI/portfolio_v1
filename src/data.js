@@ -15,7 +15,34 @@ export const projects = [
     {
         title: 'Soundify',
         subtitle: 'Role: Front End Development/Design Lead',
-        description: "Soundify is a full stack music playlist-sharing application created in a team of five over the course of a week. Soundify is built with Python and Django, connects to a Postgresql database hosted by AWS, and calls the RESTful Spotify API with the Spotipy Python library. The UI is designed in Figma and styled with a custom design system built using CSS3, including flexbox and grid layouts.",
+        team: [
+            {
+                name: 'Ian Abbene',
+                img: '',
+                role: 'Front End Lead'
+            },
+            {
+                name: 'Marley Sellem',
+                img: '',
+                role: 'Scrum Master'
+            },
+            {
+                name: 'Jon Schiavone',
+                img: '',
+                role: 'Back End Lead'
+            },
+            {
+                name: 'Chase Hilsinger',
+                img: '',
+                role: ''
+            },
+            {
+                name: 'Sean',
+                img: '',
+                role: 'Github Manager'
+            }
+        ],
+        description: "Soundify is a <span class='purple-text'>full stack music playlist-sharing application</span> created in a team of five over the course of a week. Soundify is built with Python and Django, connects to a Postgresql database hosted by AWS, and calls the RESTful Spotify API with the Spotipy Python library. The UI is designed in Figma and styled with a custom design system built using CSS3, including flexbox and grid layouts.",
         tags: ['Spotify API', 'Express', 'Node.js', 'MongoDB', 'Mongoose', 'HTML5', 'CSS3', 'Figma'],
         image: 'images/Soundify_logo_grn.svg',
         imageAlt: '',
@@ -26,7 +53,7 @@ export const projects = [
     },
     {
         title: 'ReadMe',
-        description: "A digital library application built with the Google Books API. The app uses Express, Node.js and Javascript to connect to a MongoDB database and store books the user selects via the Google Books API in bookshelves.",
+        description: "A <span class='purple-text'>digital library application</span> built with the Google Books API and Google OAuth. The app uses Express, Node.js and Javascript to connect to a MongoDB database and store books the user selects via the Google Books API in bookshelves.",
         tags: ['Google Books API', 'Python', 'Node.js', 'Postman', 'Express', 'MongoDB', 'Mongoose', 'Figma'],
         image: '',
         links: {
@@ -36,7 +63,7 @@ export const projects = [
     },
     {
         title: 'Knucklebones',
-        description: "<p> Coded <a href='https://www.cultofthelamb.com/'>Cult of the Lamb's </a> dice minigame Knucklebones in the browser.</p>",
+        description: "<p> Coded <a href='https://www.cultofthelamb.com/'>Cult of the Lamb's</a> dice minigame Knucklebones in the browser.</p>",
         tags: ['HTML5', 'CSS3', 'Greensock', 'JavaScript'],
         image: '',
         links: {

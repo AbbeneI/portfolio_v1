@@ -1,3 +1,14 @@
+.grey-bg {
+    background: var(--dark-grey);
+
+    transition: filter 0.2s ease;
+}
+
+.grey-bg:hover {
+
+    filter: brightness(1.1)
+}
+
 @media only screen and (max-width: 768px) {
 
     /* For mobile phones: */
@@ -76,6 +87,7 @@ h3 {
 }
 
 .proj-desc {
+    font-size: 1rem;
     line-height: 1.8;
 }
 
@@ -106,9 +118,3 @@ h3 {
     width: 50%;
 }
 
-.proj-link {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}

@@ -6,10 +6,12 @@ nav {
 
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
     height: 10vmin;
+
+    z-index: 10;
 }
 
 nav div {
@@ -20,21 +22,38 @@ nav div {
 }
 
 .logo-container {
-    width: 50%;
+    width: fit-content;
     justify-content: flex-start;
-
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .nav-links-container {
-    gap: 10px;
-    width: 50%;
-    justify-content: flex-end;
+    top: 6vmin;
 
+    padding: 1.5rem 2.25rem;
 
+    width: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+
+    background: var(--dark-grey);
+    backdrop-filter: blur(10px);
+    border-radius: 5vmin;
 }
 
 .logo {
     --x: 4vmin;
     height: var(--x);
     width: var(--x);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-light);
 }

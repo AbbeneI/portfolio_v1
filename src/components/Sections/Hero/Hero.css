@@ -19,6 +19,7 @@
 .description {
     line-height: 1.5;
     margin: 0 0 .75em 0;
+    max-width: 500px;
 }
 
 sup,
@@ -48,8 +49,3 @@ h2 {
 }
 
 
-
-
-span {
-    color: var(--text-dark);
-}

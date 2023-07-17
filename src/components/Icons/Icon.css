@@ -2,10 +2,12 @@
     --x: 3vmin;
     width: var(--x);
     height: var(--x);
-    filter: invert(79%) sepia(23%) saturate(0%) hue-rotate(167deg) brightness(97%) contrast(81%);
+    /* filter: invert(79%) sepia(23%) saturate(0%) hue-rotate(167deg) brightness(97%) contrast(81%); */
+    /* filter: var(--dark-grey-light-filter); */
+    filter: var(--lavender-filter);
+
 }
 
 .icon-link {
     background: rgba(0, 0, 0, 0);
 }
-
