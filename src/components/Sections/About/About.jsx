@@ -9,7 +9,7 @@ export default function About({ }) {
             <div className="about">
                 <div className='about-content'>
                     <p>
-                        I first became interested in coding when I built a website for a running club I joined in college. The results of my first project were mixed, but it ignited a love of HTML and CSS that continues today.
+                        I first became interested in coding when I built a website for my college running club—it ignited a love of HTML and CSS that continues to influence my work today.
                     </p>
                     <p>
                         My primary objective is to create accessible and responsive products for the web. Drawing from my background in user experience and design, I bring a multidisciplinary approach to every project I work on. This ensures that the end result not only meets technical requirements but also serves users.

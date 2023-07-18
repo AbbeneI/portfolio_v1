@@ -27,3 +27,18 @@
     width: var(--x);
     height: var(--x);
 }
+
+@media only screen and (max-width: 600px) {
+
+    svg.icon,
+    .side-nav-right svg.icon {
+        --x: 1.8rem;
+        height: var(--x);
+        width: var(--x);
+    }
+
+    .side-nav {
+        visibility: hidden;
+    }
+
+}

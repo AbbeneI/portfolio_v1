@@ -1,6 +1,18 @@
+@media only screen and (max-width: 600px) {
+    .about {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: 600px) {
+    .about {
+        flex-direction: row;
+    }
+}
+
+
 .about {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }

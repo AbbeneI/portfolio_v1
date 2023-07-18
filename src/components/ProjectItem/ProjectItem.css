@@ -1,15 +1,12 @@
 .grey-bg {
-    background: var(--dark-grey);
-
     transition: filter 0.2s ease;
 }
 
 .grey-bg:hover {
-
-    filter: brightness(1.1)
+    /* filter: brightness(1.1) */
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
 
     /* For mobile phones: */
     div.proj-grid {
@@ -21,6 +18,8 @@
     div.proj-img {
         grid-column: 1/1;
         grid-row: 1/1;
+        margin-bottom: 1.5rem;
+        gap: 1rem;
     }
 
     div.proj-info {
@@ -32,9 +31,26 @@
         width: 200px;
         border-radius: 4vmin;
     }
+
+    div.proj-links-container {
+        margin-top: 1rem;
+        gap: 4vmin;
+    }
+
+    div.proj-num {
+        font-weight: 800;
+        grid-column-start: 1;
+    }
+
+    p.proj-desc {
+        padding: 0.5rem 0;
+    }
+
 }
 
 .proj-item {
+    background: var(--dark-grey);
+
     padding: 0;
 
     border-radius: 5vmin;
@@ -81,11 +97,6 @@
     background: white;
 }
 
-h3 {
-    font-size: clamp(1.8rem, 6vw, 2.6rem);
-    margin: 30px 0 25px 0;
-}
-
 .proj-desc {
     font-size: 1rem;
     line-height: 1.8;
@@ -113,8 +124,12 @@ h3 {
     overflow: hidden;
 }
 
-.proj-img img {
 
+.proj-img img {
     width: 50%;
 }
 
+.proj-team {
+    width: 100%;
+    flex-wrap: nowrap;
+}

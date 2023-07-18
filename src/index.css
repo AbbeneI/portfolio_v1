@@ -9,7 +9,7 @@
     /* --lavender: #B97EFC; */
     --lav-dark: #B97EFC;
     --white: #EAEAEA;
-    --bg: #1a151f;
+    --bg: #1b1224;
     --dark-grey: #212122;
     --dark-grey: rgba(0, 0, 0, 0.2);
     /* --dark-grey: #201b27; */
@@ -20,7 +20,9 @@
     /* --dark-grey-light: #5c5c5cc1; */
 
     --text-light: #d7d7d7;
-    --text-dark: #722a2a;
+    --text-dark: #8c7d9f;
+
+    --mobile-breakpoint: 350px;
 }
 
 * {
@@ -47,8 +49,19 @@ code {
 h1,
 h2 {
     color: var(--lavender);
-    line-height: auto;
     margin: 0;
+}
+
+h2 {
+    font-size: 6.5vw;
+    font-size: clamp(38px, 8vw, 65px);
+    margin: 1vmin 0;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: clamp(30px, 4.5vw, 40px);
+    margin: 30px 0 25px 0;
 }
 
 h1,
@@ -100,8 +113,9 @@ button,
     font-size: 1rem;
     border: var(--border-light);
     background: rgba(0, 0, 0, 0.2);
-    border-radius: 4vmin;
+    border-radius: 2rem;
     padding: 1.5vmin 5vmin;
+    padding: 0.8rem 2.5rem;
     color: var(--lavender);
 
     cursor: pointer;
@@ -115,7 +129,8 @@ button:hover {
 }
 
 section {
-    margin-top: 10vmin;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
     text-align: left;
 }
 
@@ -153,4 +168,20 @@ html {
 ::-webkit-scrollbar-thumb {
     background-color: var(--dark-grey);
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        margin-bottom: 6rem;
+    }
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: column;
 }

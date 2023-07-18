@@ -1,9 +1,24 @@
+@media (min-width: 600px) {
+  .main {
+    padding: 5% 10% 10% 10%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    padding: 5% 5% 10% 5%;
+  }
+
+  .section-title {
+    margin: 1.8rem 0;
+  }
+}
+
 .main {
   text-align: center;
   min-height: 100vh;
 
   font-size: calc(10px + 2vmin);
-  padding: 5% 10% 10% 10%;
 
 }
 
@@ -13,8 +28,15 @@
 }
 
 
+
+
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 } */
+
+.section-title {
+  padding-left: 4vmin;
+  margin: 1rem 0;
+}

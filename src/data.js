@@ -18,28 +18,33 @@ export const projects = [
         team: [
             {
                 name: 'Ian Abbene',
-                img: '',
-                role: 'Front End Lead'
+                img: 'https://i.imgur.com/XdCqFhB.jpg',
+                role: 'Front End Lead',
+                github: 'https://github.com/abbenei'
             },
             {
                 name: 'Marley Sellem',
-                img: '',
-                role: 'Scrum Master'
+                img: 'https://i.imgur.com/1xjAWJq.png',
+                role: 'Scrum Master',
+                github: 'https://github.com/mzsellem-GA'
             },
             {
                 name: 'Jon Schiavone',
-                img: '',
-                role: 'Back End Lead'
+                img: 'https://i.imgur.com/wQRdoj0.png',
+                role: 'Back End Lead',
+                github: 'https://github.com/angrypirate33'
             },
             {
                 name: 'Chase Hilsinger',
-                img: '',
-                role: ''
+                img: 'https://i.imgur.com/BLXXTLW.png',
+                role: 'A role',
+                github: 'https://github.com/chasehils'
             },
             {
-                name: 'Sean',
-                img: '',
-                role: 'Github Manager'
+                name: 'Sean Harrington',
+                img: 'https://i.imgur.com/Wo4lxDa.jpg',
+                role: 'Github Manager',
+                github: 'https://github.com/seanh101'
             }
         ],
         description: "Soundify is a <span class='purple-text'>full stack music playlist-sharing application</span> created in a team of five over the course of a week. Soundify is built with Python and Django, connects to a Postgresql database hosted by AWS, and calls the RESTful Spotify API with the Spotipy Python library. The UI is designed in Figma and styled with a custom design system built using CSS3, including flexbox and grid layouts.",
@@ -67,7 +72,7 @@ export const projects = [
         tags: ['HTML5', 'CSS3', 'Greensock', 'JavaScript'],
         image: '',
         links: {
-            deployed: "",
+            deployed: "https://abbenei.github.io/knucklebones/",
             github: "https://github.com/AbbeneI/knucklebones",
         }
     }

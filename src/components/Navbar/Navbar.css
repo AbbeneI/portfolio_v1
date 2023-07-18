@@ -1,3 +1,7 @@
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (min-width: 600px) {}
+
 nav {
     position: fixed;
     top: 0;
@@ -48,7 +52,7 @@ nav div {
 }
 
 .logo {
-    --x: 4vmin;
+    --x: 30px;
     height: var(--x);
     width: var(--x);
 }

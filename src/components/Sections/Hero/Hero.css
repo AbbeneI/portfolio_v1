@@ -1,3 +1,19 @@
+@media only screen and (max-width: 600px) {
+    .hero {
+        margin-top: 5rem;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .hero {
+        margin-top: 5rem;
+        padding: 10vmin;
+    }
+
+
+}
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -6,8 +22,6 @@
     gap: 4vmin;
 
     text-align: left;
-
-    padding: 10vmin;
 
     border-radius: 10vmin;
 }
@@ -33,19 +47,10 @@ sub,
     color: var(--lavender);
 }
 
-h2 {
-    font-size: 6.5vw;
-    font-size: clamp(51px, 5vw, 80px);
-    margin: 1vmin 0;
-    line-height: 1.2;
-}
+
 
 .pre-title {
-    font-size: 1.2rem;
+    font-size: clamp(0.8rem, 2vw, 2rem);
     letter-spacing: .03rem;
     color: var(--white);
-    position: absolute;
-
 }
-
-

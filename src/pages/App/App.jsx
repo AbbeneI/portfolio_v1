@@ -65,14 +65,6 @@ function App() {
     else {
       setCursorClassList('');
     }
-
-    // Set cursor content
-    if (e.target.className === 'purple-text') {
-      setCursorContent('(they/them)')
-    }
-    else {
-      setCursorContent('')
-    }
   }
 
   function handleMouseLeave() {

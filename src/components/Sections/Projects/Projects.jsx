@@ -5,7 +5,7 @@ import { projects } from '../../../data.js';
 export default function Projects({ }) {
     return (
         <section className="projects">
-            <h2>Projects</h2>
+            <h2 className="section-title">Projects</h2>
             <ProjectList projectData={projects} />
         </section>
     )

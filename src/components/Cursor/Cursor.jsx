@@ -1,5 +1,5 @@
 import './Cursor.css';
-import { forwardRef, useImperativeHandle, useRef, useState, useEffect } from "react";
+import { forwardRef, useImperativeHandle, useRef, useEffect } from "react";
 import { gsap } from 'gsap';
 
 export const Cursor = forwardRef((props, ref) => {
@@ -15,7 +15,7 @@ export const Cursor = forwardRef((props, ref) => {
                 gsap.to(el.current, { x, y });
             }
         };
-    }, [props.content]);
+    }, []);
 
     useEffect(() => {
         function setContent() {
@@ -24,7 +24,7 @@ export const Cursor = forwardRef((props, ref) => {
         function setClassList(list) {
             props.setCursorClassList(list)
         }
-    }, [])
+    }, [props])
 
     return (
         (content === '' ?

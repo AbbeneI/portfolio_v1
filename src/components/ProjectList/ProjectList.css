@@ -1,9 +1,22 @@
+@media only screen and (max-width: 600px) {
+    .project-list {
+        gap: 2rem;
+
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .project-list {
+        gap: 4vmin;
+        margin-top: 5vmin;
+    }
+}
+
+
 .project-list {
     display: flex;
     flex-direction: column;
-    gap: 4vmin;
 
-    margin-top: 5vmin;
 }
 
 h2 {
