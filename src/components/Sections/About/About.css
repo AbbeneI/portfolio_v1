@@ -2,11 +2,19 @@
     .about {
         flex-direction: column-reverse;
     }
+
+    .about-content {
+        width: 100%;
+    }
 }
 
 @media (min-width: 600px) {
     .about {
         flex-direction: row;
+    }
+
+    .about-content {
+        width: 60%;
     }
 }
 
@@ -15,6 +23,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 1rem;
 }
 
 .headshot {
@@ -38,8 +47,12 @@
 }
 
 .about-content {
-    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+.about-headshot-banner {
+    height: 1rem;
+    background-color: var(--dark-grey);
 }

@@ -1,11 +1,11 @@
 import './About.css';
-import Headshot from './photo.png'
+import Headshot from './photo.jpg'
 
 export default function About({ }) {
 
     return (
         <section>
-            <h2>About Me</h2>
+            <h2 className="section-title">About Me</h2>
             <div className="about">
                 <div className='about-content'>
                     <p>
@@ -18,7 +18,7 @@ export default function About({ }) {
                         When I'm not immersed in coding, I enjoy making art, exploring Hyrule, and playing a never-ending game of fetch with my Husky mix Percy.
                     </p>
                 </div>
-                <div className='about-headshot'><img className="headshot" src={Headshot} /></div>
+                <div className='about-headshot'><img className="headshot" src={Headshot} /><div className='about-headshot-banner'></div></div>
             </div>
         </section>
     )

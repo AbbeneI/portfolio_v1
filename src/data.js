@@ -37,7 +37,7 @@ export const projects = [
             {
                 name: 'Chase Hilsinger',
                 img: 'https://i.imgur.com/BLXXTLW.png',
-                role: 'A role',
+                role: 'Documenter, API Support',
                 github: 'https://github.com/chasehils'
             },
             {
