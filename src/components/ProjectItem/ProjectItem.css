@@ -124,7 +124,6 @@
     overflow: hidden;
 }
 
-
 .proj-img img {
     width: 50%;
 }
@@ -132,4 +131,8 @@
 .proj-team {
     width: 100%;
     flex-wrap: nowrap;
+}
+
+.bold {
+    font-weight: 800;
 }

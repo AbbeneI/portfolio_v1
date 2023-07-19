@@ -14,7 +14,7 @@ export const projects = [
     },
     {
         title: 'Soundify',
-        subtitle: 'Role: Front End Development/Design Lead',
+        role: 'Front End Development/Design Lead',
         team: [
             {
                 name: 'Ian Abbene',
@@ -37,7 +37,7 @@ export const projects = [
             {
                 name: 'Chase Hilsinger',
                 img: 'https://i.imgur.com/BLXXTLW.png',
-                role: 'Documenter, API Support',
+                role: 'API Lead',
                 github: 'https://github.com/chasehils'
             },
             {
@@ -47,7 +47,7 @@ export const projects = [
                 github: 'https://github.com/seanh101'
             }
         ],
-        description: "Soundify is a <span class='purple-text'>full stack music playlist-sharing application</span> created in a team of five over the course of a week. Soundify is built with Python and Django, connects to a Postgresql database hosted by AWS, and calls the RESTful Spotify API with the Spotipy Python library. The UI is designed in Figma and styled with a custom design system built using CSS3, including flexbox and grid layouts.",
+        description: "Soundify is a <span class='purple-text'>full stack music playlist-sharing application</span> created in a team of five over the course of a week. Soundify is built with Python and Django, connects to a Postgresql database hosted by AWS, and calls the <a href='https://developer.spotify.com/documentation/web-api' target='_blank' rel='noreferrer'>RESTful Spotify API</a> with the <a href='https://spotipy.readthedocs.io/en/2.22.1/' target='_blank' rel='noreferrer'>Spotipy Python library</a>. The UI is designed in Figma and styled with a custom design system built using CSS3, including flexbox and grid layouts.",
         tags: ['Spotify API', 'Express', 'Node.js', 'MongoDB', 'Mongoose', 'HTML5', 'CSS3', 'Figma'],
         image: 'images/Soundify_logo_grn.svg',
         imageAlt: '',
@@ -58,7 +58,7 @@ export const projects = [
     },
     {
         title: 'ReadMe',
-        description: "A <span class='purple-text'>digital library application</span> built with the Google Books API and Google OAuth. The app uses Express, Node.js and Javascript to connect to a MongoDB database and store books the user selects via the Google Books API in bookshelves.",
+        description: "A <span class='purple-text'>digital library application</span> built with the Google Books API and Google OAuth. The app uses Express, Node.js and Javascript to connect to a MongoDB database and store books the user selects via the <a href='https://developers.google.com/books' target='_blank' rel='noreferrer'>Google Books API</a> in bookshelves.",
         tags: ['Google Books API', 'Python', 'Node.js', 'Postman', 'Express', 'MongoDB', 'Mongoose', 'Figma'],
         image: '',
         links: {
@@ -68,7 +68,7 @@ export const projects = [
     },
     {
         title: 'Knucklebones',
-        description: "<p> Coded <a href='https://www.cultofthelamb.com/'>Cult of the Lamb's</a> dice minigame Knucklebones in the browser.</p>",
+        description: "<p> Coded <a href='https://www.cultofthelamb.com/' target='_blank' rel='noreferrer'>Cult of the Lamb's</a> dice minigame Knucklebones in the browser using vanilla Javascript, CSS3 and JS animation framework Greensock.</p>",
         tags: ['HTML5', 'CSS3', 'Greensock', 'JavaScript'],
         image: '',
         links: {

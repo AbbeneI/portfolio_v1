@@ -27,7 +27,7 @@ export default function Hero({ setCursorContent }) {
                 I have a diverse background in user experience and design, and I'm passionate about creating usable, accessible interfaces.
             </p>
 
-            <a className="button" href="images/logo.png" target="_blank" rel="noreferrer">Resume</a>
+            <a className="button" href="images/IanAbbeneResume.pdf" target="_blank" rel="noreferrer">Resume</a>
         </section >
     )
 }

@@ -30,8 +30,8 @@ export default function projectItem({ project, idx }) {
                     <h3>
                         {project.title}
                     </h3>
-                    {project.subtitle ? <h4>
-                        {project.subtitle}
+                    {project.role ? <h4>
+                        <span className="purple-text bold">Role:</span><br />{project.role}
                     </h4> : <></>}
 
                     {project.team ? <div className="proj-team flex-col">{team}</div> : <></>}
