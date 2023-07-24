@@ -22,38 +22,41 @@ export default function projectItem({ project, idx }) {
 
     return (
         <div className={`proj-item ${project.title}`}>
-            <div className="proj-grid">
-                <div className="proj-info">
-                    <div className="proj-num">
-                        <span className="purple-text">0{idx + 1}</span>
+            <a className="proj-link-none" href={project.links.deployed} target="_blank" rel="noreferrer">
+                <div className="proj-grid">
+                    <div className="proj-info">
+                        <div className="proj-num">
+                            <span className="purple-text">0{idx + 1}</span>
+                        </div>
+                        <div className="proj-links-container">
+                            <h3>
+                                {project.title}
+                            </h3>
+                            {project.links.github ? <a className="proj-link" href={project.links.github} target="_blank" rel="noreferrer"><GitHub /></a> : <></>}
+
+                            {project.links.codepen ? <a className="proj-link" href={project.links.codepen} target="_blank" rel="noreferrer"> <CodePen /></a> : <></>}
+
+
+                            <a className="proj-link ext" href={project.links.deployed} target="_blank" rel="noreferrer">{'\u2197'}</a>
+                        </div>
+
+                        {project.role ? <h4>
+                            <span className="purple-text bold">Role:</span><br />{project.role}
+                        </h4> : <></>}
+
+                        {project.team ? <div className="proj-team flex-col">{team}</div> : <></>}
+
+                        <p className="proj-desc" dangerouslySetInnerHTML={descriptionHTML} />
+                        <div className="proj-tags-container">
+                            {projTags}
+                        </div>
+
                     </div>
-                    <div className="proj-links-container">
-                        <h3>
-                            {project.title}
-                        </h3>
-                        {project.links.github ? <a className="proj-link" href={project.links.github} target="_blank" rel="noreferrer"><GitHub /></a> : <></>}
-                        {project.links.codepen ? <a className="proj-link" href={project.links.codepen} target="_blank" rel="noreferrer"> <CodePen /></a> : <></>}
-
-                        {/* {project.links.deployed ? <a className="proj-link" href={project.links.deployed} target="_blank" rel="noreferrer"><External /></a> : <></>} */}
-                        <a className="proj-link" href={project.links.deployed} target="_blank" rel="noreferrer">{'\u2197'}</a>
+                    <div className="proj-img">
+                        {/* <img src="" alt={`${project.title} project thumbnail`} /> */}
                     </div>
-
-                    {project.role ? <h4>
-                        <span className="purple-text bold">Role:</span><br />{project.role}
-                    </h4> : <></>}
-
-                    {project.team ? <div className="proj-team flex-col">{team}</div> : <></>}
-
-                    <p className="proj-desc" dangerouslySetInnerHTML={descriptionHTML} />
-                    <div className="proj-tags-container">
-                        {projTags}
-                    </div>
-
                 </div>
-                <div className="proj-img">
-                    {/* <img src="" alt={`${project.title} project thumbnail`} /> */}
-                </div>
-            </div>
+            </a>
         </div >
 
     )

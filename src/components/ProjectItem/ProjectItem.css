@@ -40,6 +40,26 @@
 
 }
 
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    35% {
+        transform: translate(3px, -6px);
+
+    }
+
+    65% {
+        transform: translate(3px, -6px);
+
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 .proj-item {
     background: var(--dark-grey);
 
@@ -50,6 +70,14 @@
     text-align: left;
 
     transition: all 0.2s ease;
+}
+
+.proj-item:hover {
+    filter: brightness(1.1);
+}
+
+.proj-item:hover .ext {
+    animation: bounce 2s ease infinite;
 }
 
 .proj-grid {
@@ -134,7 +162,10 @@
 }
 
 .proj-link svg {
-    --clamp: var(clamp(23px, 3vw, 29px));
-    height: var(--clamp);
-    width: var(--clamp);
+    height: clamp(23px, 3vw, 29px);
+    width: clamp(23px, 3vw, 29px);
+}
+
+.proj-link-none {
+    color: inherit;
 }
