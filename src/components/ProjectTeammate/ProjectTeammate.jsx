@@ -4,11 +4,15 @@ export default function ProjectTeammate({ teammate }) {
 
     return (
         <div className="teammate-container flex-ctr">
-            <a className="proj-mate-link" href={teammate.github} target="_blank" rel="noreferrer"><img className="proj-mate-img" alt={`Photo of ${teammate.name}`} src={teammate.img} /></a>
+
+            <img className="proj-mate-img" alt={`Photo of ${teammate.name}`} src={teammate.img} />
+
 
             <div className="proj-mate-info">
-                <p>{teammate.name}</p>
-                <p>{teammate.role}</p>
+                <a className="proj-mate-link" href={teammate.github} target="_blank" rel="noreferrer">
+                    <p className="bold">{teammate.name} {'\u2197'}</p>
+                </a>
+                <p>{teammate.role} </p>
             </div>
         </div>
     )

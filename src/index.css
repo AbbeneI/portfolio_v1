@@ -25,6 +25,12 @@
     --mobile-breakpoint: 350px;
 }
 
+@media only screen and (max-width: 600px) {
+    section {
+        margin-bottom: 4rem;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -172,12 +178,6 @@ html {
 ::-webkit-scrollbar-thumb {
     background-color: var(--dark-grey);
     border-radius: 10px;
-}
-
-@media only screen and (max-width: 600px) {
-    section {
-        margin-bottom: 6rem;
-    }
 }
 
 .flex-col {

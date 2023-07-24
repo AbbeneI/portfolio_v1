@@ -3,7 +3,6 @@ export const projects = [
         title: 'Portfolio Site',
         subtitle: '',
         description: "My personal portfolio site, designed in Figma and coded in React.",
-        deployedLink: '',
         tags: ['HTML5', 'CSS3', 'Greensock', 'JavaScript', 'Figma'],
         image: '',
         links: {
@@ -48,7 +47,7 @@ export const projects = [
             }
         ],
         description: "Soundify is a <span class='purple-text'>full stack music playlist-sharing application</span> created in a team of five over the course of a week. Soundify is built with Python and Django, connects to a Postgresql database hosted by AWS, and calls the <a href='https://developer.spotify.com/documentation/web-api' target='_blank' rel='noreferrer'>RESTful Spotify API</a> with the <a href='https://spotipy.readthedocs.io/en/2.22.1/' target='_blank' rel='noreferrer'>Spotipy Python library</a>. The UI is designed in Figma and styled with a custom design system built using CSS3, including flexbox and grid layouts.",
-        tags: ['Spotify API', 'Express', 'Node.js', 'MongoDB', 'Mongoose', 'HTML5', 'CSS3', 'Figma'],
+        tags: ['Spotify API', 'Express', 'Node.js', 'MongoDB', 'HTML5', 'CSS3', 'Figma'],
         image: 'images/Soundify_logo_grn.svg',
         imageAlt: '',
         links: {
@@ -59,7 +58,7 @@ export const projects = [
     {
         title: 'ReadMe',
         description: "A <span class='purple-text'>digital library application</span> built with the Google Books API and Google OAuth. The app uses Express, Node.js and Javascript to connect to a MongoDB database and store books the user selects via the <a href='https://developers.google.com/books' target='_blank' rel='noreferrer'>Google Books API</a> in bookshelves.",
-        tags: ['Google Books API', 'Python', 'Node.js', 'Postman', 'Express', 'MongoDB', 'Mongoose', 'Figma'],
+        tags: ['Google Books API', 'Python', 'Node.js', 'Postman', 'Express', 'MongoDB', 'Figma'],
         image: '',
         links: {
             deployed: "https://mylibrary.fly.dev/",

@@ -1,25 +1,44 @@
 @media only screen and (max-width: 600px) {
-    .about {
+    .about-content {
         flex-direction: column-reverse;
     }
 
-    .about-content {
+    .about-desc {
         width: 100%;
+    }
+
+    .about-headshot {
+        padding-bottom: 0.5rem;
+    }
+
+    .headshot {
+        margin-left: 0rem;
+    }
+
+    .about {
+        margin-bottom: 4rem;
     }
 }
 
 @media (min-width: 600px) {
-    .about {
+    .about-content {
         flex-direction: row;
     }
 
-    .about-content {
+    .about-desc {
         width: 60%;
+    }
+
+    .about-headshot {
+        padding-left: 20px;
+    }
+
+    .headshot {
+        margin-left: 2rem;
     }
 }
 
-
-.about {
+.about-content {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -31,7 +50,6 @@
     width: 100%;
     max-width: 250px;
     transition: transform 0.2s ease;
-    box-shadow: -0.5rem 0.5rem 0 var(--dark-grey);
 }
 
 .headshot:hover {
@@ -47,7 +65,7 @@
     align-items: center;
 }
 
-.about-content {
+.about-desc {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

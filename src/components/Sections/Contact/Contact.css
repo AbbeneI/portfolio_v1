@@ -1,0 +1,17 @@
+.contact {
+    background: var(--dark-grey);
+
+    padding: 8vmin;
+
+    border-radius: 5vmin;
+
+    text-align: left;
+
+    transition: all 0.2s ease;
+
+    margin-bottom: 1rem;
+}
+
+.contact .section-title {
+    padding-left: 0;
+}

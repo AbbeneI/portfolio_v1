@@ -1,3 +1,28 @@
+@media only screen and (max-width: 600px) {
+
+    .side-nav-right svg.icon {
+        --x: 1.8rem;
+        height: var(--x);
+        width: var(--x);
+    }
+
+    .side-nav {
+        visibility: hidden;
+    }
+
+    section .side-nav {
+        visibility: visible;
+        position: relative;
+        flex-direction: row;
+    }
+
+    .side-nav-right a {
+        border: 0;
+        background: 0;
+    }
+
+}
+
 .side-nav {
     position: fixed;
     display: flex;
@@ -26,19 +51,4 @@
     --x: 2.5vmin;
     width: var(--x);
     height: var(--x);
-}
-
-@media only screen and (max-width: 600px) {
-
-    svg.icon,
-    .side-nav-right svg.icon {
-        --x: 1.8rem;
-        height: var(--x);
-        width: var(--x);
-    }
-
-    .side-nav {
-        visibility: hidden;
-    }
-
 }

@@ -4,10 +4,10 @@ import Headshot from './photo.jpg'
 export default function About({ }) {
 
     return (
-        <section>
+        <section className='about'>
             <h2 className="section-title">About Me</h2>
-            <div className="about">
-                <div className='about-content'>
+            <div className="about-content">
+                <div className='about-desc'>
                     <p>
                         I first became interested in coding when I built a website for my college running club—it ignited a love of HTML and CSS that continues to influence my work today.
                     </p>
