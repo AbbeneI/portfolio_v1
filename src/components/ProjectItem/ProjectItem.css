@@ -107,11 +107,6 @@
     margin-top: 1vmin;
 }
 
-.proj-link {
-    /* padding: 1rem;
-    border-radius: 50%; */
-}
-
 .proj-img {
     display: flex;
     flex-direction: row;
@@ -139,6 +134,7 @@
 }
 
 .proj-link svg {
-    height: clamp(23px, 3vw, 33px);
-    width: clamp(23px, 3vw, 33px);
+    --clamp: var(clamp(23px, 3vw, 29px));
+    height: var(--clamp);
+    width: var(--clamp);
 }
