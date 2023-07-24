@@ -139,6 +139,6 @@
 }
 
 .proj-link svg {
-    height: clamp(23px, 3vw, 40px);
-    width: clamp(23px, 3vw, 40px);
+    height: clamp(23px, 3vw, 33px);
+    width: clamp(23px, 3vw, 33px);
 }

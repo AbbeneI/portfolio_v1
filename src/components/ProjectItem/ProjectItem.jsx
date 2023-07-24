@@ -51,7 +51,7 @@ export default function projectItem({ project, idx }) {
 
                 </div>
                 <div className="proj-img">
-                    <img src="" alt={`${project.title} project thumbnail`} />
+                    {/* <img src="" alt={`${project.title} project thumbnail`} /> */}
                 </div>
             </div>
         </div >

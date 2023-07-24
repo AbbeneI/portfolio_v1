@@ -9,9 +9,11 @@ export default function Contact({ }) {
     return (
         <section className="contact">
             <h2 className="section-title">Contact</h2>
-            <p>Send me an email or connect with me on LinkedIn!</p>
+            <p>You can reach me by email, or connect with me on LinkedIn.</p>
             <div className="side-nav side-nav-right">
-                <a className="button" href="mailto:ianabbene@gmail.com?subject=Hello! ✋" target="_blank" rel="noreferrer"><Email /></a>
+                <a className="button" href="mailto:ianabbene@gmail.com?subject=Hello! ✋" target="_blank" rel="noreferrer">
+                    <Email />
+                </a>
                 <a className="button" href={socialLinks.linkedin} target="_blank" rel="noreferrer">
                     <LinkedIn />
                 </a>

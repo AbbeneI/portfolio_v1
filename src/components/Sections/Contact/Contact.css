@@ -1,3 +1,19 @@
+@media only screen and (max-width: 600px) {
+    .contact {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 600px) {
+
+    .contact,
+    .contact * {
+        visibility: hidden;
+        height: 0px;
+        position: absolute;
+    }
+}
+
 .contact {
     background: var(--dark-grey);
 
@@ -6,8 +22,6 @@
     border-radius: 5vmin;
 
     text-align: left;
-
-    transition: all 0.2s ease;
 
     margin-bottom: 1rem;
 }

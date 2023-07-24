@@ -3,7 +3,7 @@ import { forwardRef, useImperativeHandle, useRef, useEffect } from "react";
 import { gsap } from 'gsap';
 
 export const Cursor = forwardRef((props, ref) => {
-    const el = useRef({});
+    const el = useRef(null);
 
     let content = props.content;
     let classList = props.classList;
