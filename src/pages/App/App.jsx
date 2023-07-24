@@ -67,7 +67,9 @@ function App() {
           <div className="logo-container">
             <Link className="logo-link" to="hero"
               spy={true}
-              smooth={true}>
+              smooth={false}
+              offset={-70}
+              duration={200}>
               <img className="logo" alt="logo" src="./images/logo.svg" />
             </Link>
           </div>
