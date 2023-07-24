@@ -1,6 +1,7 @@
 import { useState, useRef, useLayoutEffect, forwardRef } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import './App.css';
+import '../../components/Navbar/Navbar.css'
 
 import Hero from '../../components/Sections/Hero/Hero.jsx';
 import Projects from '../../components/Sections/Projects/Projects.jsx';
@@ -17,8 +18,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-
-
   const main = useRef()
   const cursorRef = useRef()
   const heroRef = useRef();
@@ -64,8 +63,6 @@ function App() {
     <>
       <header className="App-header" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
         {/* <Navbar hero={heroRef} about={aboutRef} projects={projectsRef} /> */}
-
-
         <nav>
           <div className="logo-container">
             <Link className="logo-link" to="hero"
@@ -106,8 +103,6 @@ function App() {
             </Link>
           </div>
         </nav>
-
-
 
         <NavbarRight />
       </header>

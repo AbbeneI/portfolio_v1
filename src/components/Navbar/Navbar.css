@@ -90,3 +90,7 @@ nav div {
     text-decoration: none;
     font-weight: 600;
 }
+
+.active-nav-link {
+    color: var(--white);
+}
