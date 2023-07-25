@@ -161,6 +161,10 @@
     font-weight: 800;
 }
 
+.proj-link.ext {
+    transition: all 0.2s ease;
+}
+
 .proj-link svg {
     height: clamp(23px, 3vw, 29px);
     width: clamp(23px, 3vw, 29px);
