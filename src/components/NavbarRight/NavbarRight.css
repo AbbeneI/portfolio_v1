@@ -6,6 +6,12 @@
         width: var(--x);
     }
 
+    .side-nav-right svg.icon.email {
+        --x: 2.2rem;
+        width: var(--x);
+        height: var(--x);
+    }
+
     .side-nav {
         visibility: hidden;
     }

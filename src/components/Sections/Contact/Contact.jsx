@@ -1,8 +1,8 @@
 import './Contact.css';
-import NavbarRight from '../../NavbarRight/NavbarRight'
 import { socialLinks } from "../../../data";
 import LinkedIn from "../../Icons/LinkedIn";
 import Email from "../../Icons/Email";
+import Codepen from '../../Icons/Codepen';
 
 export default function Contact({ }) {
 
@@ -16,6 +16,9 @@ export default function Contact({ }) {
                 </a>
                 <a className="button" href={socialLinks.linkedin} target="_blank" rel="noreferrer">
                     <LinkedIn />
+                </a>
+                <a className="button" href={socialLinks.linkedin} target="_blank" rel="noreferrer">
+                    <Codepen />
                 </a>
             </div>
 
