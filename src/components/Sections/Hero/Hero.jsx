@@ -1,6 +1,8 @@
 import './Hero.css';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Hero({ setCursorContent }) {
+
 
     function handleMouseOver(e) {
         if (e.target.className === 'purple-text') {
@@ -26,8 +28,15 @@ export default function Hero({ setCursorContent }) {
             <p className="description">
                 I have a diverse background in user experience and design, and I'm passionate about creating usable, accessible interfaces.
             </p>
-
-            <a className="button" href="images/IanAbbeneResume.pdf" target="_blank" rel="noreferrer">Resume</a>
+            <Link
+                className="button"
+                to="projects"
+                spy={true}
+                smooth={false}
+                offset={-70}
+                duration={200}>
+                My Work
+            </Link>
         </section >
     )
 }
