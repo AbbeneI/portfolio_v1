@@ -58,6 +58,7 @@
     --x: 5vmin;
     max-height: var(--x);
     max-width: var(--x);
+    color: var(--text-light);
 }
 
 .cursor.active {

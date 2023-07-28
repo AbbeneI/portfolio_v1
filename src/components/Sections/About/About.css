@@ -79,3 +79,7 @@
 .about .section-title {
     padding-left: 2vmin;
 }
+
+.about span {
+    color: var(--lavender);
+}
