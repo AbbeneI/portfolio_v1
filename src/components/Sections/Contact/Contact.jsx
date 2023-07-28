@@ -33,6 +33,7 @@ export default function Contact({ }) {
                         <Medium />
                     </a>
                 </div>
+
             </div>
 
         </section>
