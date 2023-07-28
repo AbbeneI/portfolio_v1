@@ -19,32 +19,13 @@ gsap.registerPlugin(ScrollTrigger);
 function App() {
   const main = useRef(null)
   const cursorRef = useRef(null)
-  const heroRef = useRef(null);
+  const heroRef = useRef({});
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
 
   const [cursorContent, setCursorContent] = useState('')
   const [cursorClassList, setCursorClassList] = useState('')
 
-  // const myInput = forwardRef((props, ref) => {
-  //   return <input {...props} ref={ref} />;
-  // });
-
-
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-
-      gsap.to(heroRef.current,
-        {
-          opacity: 0,
-          duration: 200
-        }
-      );
-
-    });
-
-    return () => ctx.revert();
-  }, main);
 
 
   useLayoutEffect(() => {
@@ -82,9 +63,9 @@ function App() {
         <Cursor content={cursorContent} classList={cursorClassList} ref={cursorRef} setCursorContent={setCursorContent} setCursorClassList={setCursorClassList} />
       </div>
       <main className="main" ref={main} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
-        <Hero setCursorContent={setCursorContent} id="hero" ref={heroRef} />
-        <Projects id="projects" ref={projectsRef} />
-        <About setCursorContent={setCursorContent} id="about" ref={aboutRef} />
+        <Hero setCursorContent={setCursorContent} id="hero" />
+        <Projects id="projects" />
+        <About setCursorContent={setCursorContent} id="about" />
         <Contact />
       </main >
       <footer>
