@@ -2,12 +2,14 @@ import "./Navbar.css"
 import { Link, animateScroll as scroll } from "react-scroll";
 
 
-export default function navbar() {
+export default function Navbar() {
 
     return (
         <nav>
             <div className="logo-container">
                 <Link className="logo-link" to="hero"
+                    aria-label="Scroll to top of site"
+                    href="#hero"
                     spy={true}
                     smooth={false}
                     offset={-70}
@@ -18,8 +20,9 @@ export default function navbar() {
             <div className="nav-links-container">
                 <Link
                     className="nav-link"
-                    aria-label="Scroll to homepage"
+                    aria-label="Scroll to top of site"
                     to="hero"
+                    href="#hero"
                     spy={true}
                     smooth={false}
                     offset={-70}
