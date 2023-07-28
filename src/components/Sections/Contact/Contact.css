@@ -1,17 +1,17 @@
 @media only screen and (max-width: 600px) {
-    .contact {
+    /* .contact {
         visibility: visible;
-    }
+    } */
 }
 
 @media (min-width: 600px) {
 
-    .contact,
+    /* .contact,
     .contact * {
         visibility: hidden;
         height: 0px;
         position: absolute;
-    }
+    } */
 }
 
 .contact {
@@ -26,6 +26,37 @@
     margin-bottom: 1rem;
 }
 
+.icon-container svg.icon {
+    --x: 1.8rem;
+    height: var(--x);
+    width: var(--x);
+}
+
+.icon-container svg.icon.email {
+    --x: 2.2rem;
+    width: var(--x);
+    height: var(--x);
+}
+
 .contact .section-title {
     padding-left: 0;
+}
+
+section .icon-container {
+    visibility: visible;
+    position: relative;
+    flex-direction: row;
+}
+
+.icon-container a {
+    border: 0;
+    background: 0;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
