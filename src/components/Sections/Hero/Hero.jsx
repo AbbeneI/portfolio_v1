@@ -43,6 +43,8 @@ export default function Hero({ setCursorContent }) {
             <Link
                 className="button"
                 to="projects"
+                href="#projects"
+                aria-label="Scroll to see my work"
                 spy={true}
                 smooth={false}
                 offset={-70}
