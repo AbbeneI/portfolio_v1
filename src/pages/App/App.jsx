@@ -12,12 +12,13 @@ import Footer from "../../components/Footer/Footer.jsx";
 import { Cursor } from '../../components/Cursor/Cursor.jsx';
 
 import { gsap } from "gsap";
+import fadeIn from "../../components/Animations/FadeIn/FadeIn";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-  const main = useRef(null)
+  const appRef = useRef(null)
   const cursorRef = useRef(null)
   const heroRef = useRef({});
   const aboutRef = useRef(null);
@@ -26,7 +27,14 @@ function App() {
   const [cursorContent, setCursorContent] = useState('')
   const [cursorClassList, setCursorClassList] = useState('')
 
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      fadeIn(appRef.current)
+    });
 
+    return () => ctx.revert();
+
+  }, [])
 
   useLayoutEffect(() => {
     // doesn't trigger a render!
@@ -54,7 +62,7 @@ function App() {
 
 
   return (
-    <>
+    <app ref={appRef}>
       <header className="App-header" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
         <Navbar />
         <NavbarRight />
@@ -62,7 +70,7 @@ function App() {
       <div className="cursor-container">
         <Cursor content={cursorContent} classList={cursorClassList} ref={cursorRef} setCursorContent={setCursorContent} setCursorClassList={setCursorClassList} />
       </div>
-      <main className="main" ref={main} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
+      <main className="main" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
         <Hero setCursorContent={setCursorContent} id="hero" />
         <Projects id="projects" />
         <About setCursorContent={setCursorContent} id="about" />
@@ -71,7 +79,7 @@ function App() {
       <footer>
         <Footer />
       </footer>
-    </>
+    </app>
   );
 }
 
