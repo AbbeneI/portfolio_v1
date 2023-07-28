@@ -1,8 +1,6 @@
 @media only screen and (max-width: 600px) {
     .logo {
-        --x: 20px;
-        height: var(--x);
-        width: var(--x);
+        visibility: hidden;
     }
 
     .nav-links-container {

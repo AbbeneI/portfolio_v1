@@ -18,6 +18,17 @@ export default function Contact({ }) {
                     <LinkedIn />
                 </a>
             </div>
+            <div class="mobile-container">
+                <p>Social Links:</p>
+                <div className="icon-container">
+                    <a className="button" href="mailto:ianabbene@gmail.com?subject=Hello! ✋" target="_blank" rel="noreferrer">
+                        <Email />
+                    </a>
+                    <a className="button" href={socialLinks.linkedin} target="_blank" rel="noreferrer">
+                        <LinkedIn />
+                    </a>
+                </div>
+            </div>
 
         </section>
     )
