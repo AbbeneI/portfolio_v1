@@ -18,7 +18,7 @@ export default function Hero({ setCursorContent }) {
     }
 
     return (
-        <section className="hero grey-bg">
+        <section className="hero">
             <h1 className="pre-title">
                 Hello! My name is
             </h1>

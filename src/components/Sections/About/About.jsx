@@ -18,7 +18,7 @@ export default function About({ }) {
                         When I'm not immersed in coding, I enjoy making art, exploring Hyrule, and playing a never-ending game of fetch with my Husky mix Percy.
                     </p>
                 </div>
-                <div className='about-headshot'><img className="headshot" src={Headshot} /><div className='about-headshot-banner'></div></div>
+                <div className='about-headshot'><img className="headshot" src={Headshot} alt="Professional photo of Ian Abbene" /><div className='about-headshot-banner'></div></div>
             </div>
         </section>
     )

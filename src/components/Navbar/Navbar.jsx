@@ -18,6 +18,7 @@ export default function navbar() {
             <div className="nav-links-container">
                 <Link
                     className="nav-link"
+                    aria-label="Scroll to homepage"
                     to="hero"
                     spy={true}
                     smooth={false}
@@ -27,6 +28,7 @@ export default function navbar() {
                 </Link>
                 <Link
                     className="nav-link"
+                    aria-label="Scroll to Ian's work"
                     activeClass="active-nav-link"
                     to="projects"
                     spy={true}
@@ -37,6 +39,7 @@ export default function navbar() {
                 </Link>
                 <Link
                     className="nav-link"
+                    aria-label="Scroll to About section"
                     activeClass="active-nav-link"
                     to="about"
                     spy={true}

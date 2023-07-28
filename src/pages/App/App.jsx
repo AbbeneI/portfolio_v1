@@ -1,4 +1,4 @@
-import { useState, useRef, useLayoutEffect, forwardRef } from "react";
+import { useEffect, useState, useRef, useLayoutEffect, forwardRef } from "react";
 import './App.css';
 import '../../components/Navbar/Navbar.css'
 
@@ -17,24 +17,38 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-  const main = useRef()
-  const cursorRef = useRef()
-  const heroRef = useRef();
-  const aboutRef = useRef();
-  const projectsRef = useRef();
+  const main = useRef(null)
+  const cursorRef = useRef(null)
+  const heroRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
 
   const [cursorContent, setCursorContent] = useState('')
   const [cursorClassList, setCursorClassList] = useState('')
 
-  const myInput = forwardRef((props, ref) => {
-    return <input {...props} ref={ref} />;
-  });
+  // const myInput = forwardRef((props, ref) => {
+  //   return <input {...props} ref={ref} />;
+  // });
 
+
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+
+      gsap.to(heroRef.current,
+        {
+          opacity: 0,
+          duration: 200
+        }
+      );
+
+    });
+
+    return () => ctx.revert();
+  }, main);
 
 
   useLayoutEffect(() => {
     // doesn't trigger a render!
-
     const onMove = (ev) => {
       cursorRef.current.moveTo(ev.clientX - 10, ev.clientY - 10);
     };
@@ -70,7 +84,7 @@ function App() {
       <main className="main" ref={main} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
         <Hero setCursorContent={setCursorContent} id="hero" ref={heroRef} />
         <Projects id="projects" ref={projectsRef} />
-        <About id="about" ref={aboutRef} />
+        <About setCursorContent={setCursorContent} id="about" ref={aboutRef} />
         <Contact />
       </main >
       <footer>
