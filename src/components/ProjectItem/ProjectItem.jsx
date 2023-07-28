@@ -36,10 +36,10 @@ export default function ProjectItem({ project, idx }) {
                         <h3>
                             {project.title}
                         </h3>
-                        {project.links.github ? <a className="proj-link" alt="Link to Github repository" href={project.links.github} target="_blank" rel="noreferrer"><GitHub /></a> : <></>}
-                        {project.links.codepen ? <a className="proj-link" href={project.links.codepen} target="_blank" rel="noreferrer" alt="Link to Codepen"> <CodePen /></a> : <></>}
+                        {project.links.github ? <a className="proj-link" alt="Link to Github repository" href={project.links.github} target="_blank" rel="noreferrer" aria-label="Link to Github repository"><GitHub /></a> : <></>}
+                        {project.links.codepen ? <a className="proj-link" href={project.links.codepen} target="_blank" rel="noreferrer" alt="Link to Codepen" aria-label="Link to Codepen"> <CodePen /></a> : <></>}
 
-                        {project.links.deployed ? <a className="proj-link" alt="Link to the project" href={project.links.deployed} target="_blank" rel="noreferrer">{'\u2197'}</a> : <></>}
+                        {project.links.deployed ? <a className="proj-link" alt="Link to the project" aria-label="Link to the project" href={project.links.deployed} target="_blank" rel="noreferrer">{'\u2197'}</a> : <></>}
                     </div>
 
                     {project.role ? <h4>

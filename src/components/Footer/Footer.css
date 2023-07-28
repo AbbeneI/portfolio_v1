@@ -1,5 +1,5 @@
 footer {
     padding: 5% 10%;
     text-align: center;
-
+    color: var(--text-light);
 }
