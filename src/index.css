@@ -4,20 +4,24 @@
     --border-light: 1px solid var(--dark-grey-light);
     --br-big: 10vmin;
 
+    /* Colors */
     --lavender: #E1AFFE;
-    --lavender-filter: invert(77%) sepia(9%) saturate(3012%) hue-rotate(211deg) brightness(102%) contrast(99%);
-    /* --lavender: #B97EFC; */
     --lav-dark: #B97EFC;
     --white: #EAEAEA;
     --bg: #1b1224;
-    --dark-grey: #212122;
-    --dark-grey: rgba(0, 0, 0, 0.2);
-    /* --dark-grey: #201b27; */
-    --dark-grey-light: #645873;
-    /* --dark-grey-light-filter: invert(40%) sepia(9%) saturate(1104%) hue-rotate(224deg) brightness(84%) contrast(86%); */
+
+    --dark-purple: rgba(0, 0, 0, 0.2);
+    --dark-grey: #2a2334;
+
+    --dark-grey-light: #817294;
     --dark-grey-light-filter: invert(59%) sepia(6%) saturate(1955%) hue-rotate(224deg) brightness(91%) contrast(80%);
+
     /* it's this color ^^ #9682b0 */
     /* --dark-grey-light: #5c5c5cc1; */
+
+    /* Filters for SVGs */
+    --lavender-filter: invert(77%) sepia(9%) saturate(3012%) hue-rotate(211deg) brightness(102%) contrast(99%);
+
 
     --text-light: #d7d7d7;
     --text-dark: #8c7d9f;
@@ -37,7 +41,6 @@
 
 html {
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -103,7 +106,7 @@ a:not(.icon-link):hover {
 
 a.proj-link:hover svg,
 svg:hover,
-a.button:hover a.icon-link svg {
+a.button:hover svg {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(36deg) brightness(105%) contrast(101%);
 }
 
@@ -140,7 +143,8 @@ button,
 
 .button:hover,
 button:hover {
-    background: var(--dark-grey-light);
+    background:
+        #5b4e5e;
 }
 
 section {

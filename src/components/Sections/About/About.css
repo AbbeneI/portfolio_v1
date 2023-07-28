@@ -75,3 +75,7 @@
     height: 1rem;
     background-color: var(--dark-grey);
 }
+
+.about .section-title {
+    padding-left: 2vmin;
+}

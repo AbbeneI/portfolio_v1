@@ -1,9 +1,11 @@
 .proj-tag {
-    border: var(--border-light);
+    --purple: #9b87b1;
+    border: 1px solid var(--purple);
     padding: 1vmin 1.5vmin;
     border-radius: 1vmin;
     background: var(--dark-grey);
     transition: filter 0.2s ease;
+    color: var(--purple);
 }
 
 .proj-tag:hover {
