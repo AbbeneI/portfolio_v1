@@ -1,17 +1,13 @@
-@media only screen and (max-width: 600px) {
-    /* .contact {
-        visibility: visible;
-    } */
-}
+@media only screen and (max-width: 600px) {}
 
 @media (min-width: 600px) {
 
-    /* .contact,
-    .contact * {
+    .mobile-container,
+    .mobile-container * {
         visibility: hidden;
         height: 0px;
         position: absolute;
-    } */
+    }
 }
 
 .contact {
@@ -59,4 +55,9 @@ section .icon-container {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+.mobile-container .icon-container a {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
