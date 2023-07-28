@@ -8,7 +8,7 @@
         visibility: hidden;
         height: 0px;
         position: absolute;
-    } */
+    } 
 }
 
 .contact {
@@ -61,5 +61,4 @@ section .icon-container {
 .mobile-container .icon-container a {
     padding-left: 1rem;
     padding-right: 1rem;
-
 }
