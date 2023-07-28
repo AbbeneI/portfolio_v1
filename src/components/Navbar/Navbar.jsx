@@ -3,7 +3,6 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 
 export default function Navbar() {
-
     return (
         <nav>
             <div className="logo-container">
@@ -52,6 +51,18 @@ export default function Navbar() {
                     offset={-70}
                     duration={200}>
                     About
+                </Link>
+                <Link
+                    className="nav-link"
+                    aria-label="Scroll to Contact section"
+                    activeClass="active-nav-link"
+                    to="contact"
+                    href="#contact"
+                    spy={true}
+                    smooth={false}
+                    offset={-70}
+                    duration={200}>
+                    Contact
                 </Link>
             </div>
         </nav>
