@@ -4,8 +4,13 @@ import GitHub from "../Icons/Github.jsx";
 import CodePen from "../Icons/Codepen.jsx";
 import External from "../Icons/External.jsx";
 import ProjectTeammate from "../ProjectTeammate/ProjectTeammate";
+import { useRef, useLayoutEffect } from "react";
+import { gsap } from "gsap";
+import fadeIn from "../Animations/FadeIn/FadeIn";
 
-export default function projectItem({ project, idx }) {
+export default function ProjectItem({ project, idx }) {
+    const projectRef = useRef();
+
     const projTags = project.tags.map((tag, idx) =>
         <ProjectTag tag={tag} key={idx} />
     );
@@ -21,7 +26,7 @@ export default function projectItem({ project, idx }) {
 
 
     return (
-        <div className={`proj-item ${project.title}`}>
+        <div className={`proj-item ${project.title}`} ref={projectRef}>
             <div className="proj-grid">
                 <div className="proj-info">
                     <div className="proj-num">
@@ -31,10 +36,10 @@ export default function projectItem({ project, idx }) {
                         <h3>
                             {project.title}
                         </h3>
-                        {project.links.github ? <a className="proj-link" href={project.links.github} target="_blank" rel="noreferrer"><GitHub /></a> : <></>}
-                        {project.links.codepen ? <a className="proj-link" href={project.links.codepen} target="_blank" rel="noreferrer"> <CodePen /></a> : <></>}
+                        {project.links.github ? <a className="proj-link" alt="Link to Github repository" href={project.links.github} target="_blank" rel="noreferrer"><GitHub /></a> : <></>}
+                        {project.links.codepen ? <a className="proj-link" href={project.links.codepen} target="_blank" rel="noreferrer" alt="Link to Codepen"> <CodePen /></a> : <></>}
 
-                        {project.links.deployed ? <a className="proj-link" href={project.links.deployed} target="_blank" rel="noreferrer">{'\u2197'}</a> : <></>}
+                        {project.links.deployed ? <a className="proj-link" alt="Link to the project" href={project.links.deployed} target="_blank" rel="noreferrer">{'\u2197'}</a> : <></>}
                     </div>
 
                     {project.role ? <h4>

@@ -1,8 +1,20 @@
 import './Hero.css';
 import { Link, animateScroll as scroll } from "react-scroll";
+import { gsap } from "gsap";
+import { useLayoutEffect, useRef } from 'react';
+import fadeIn from '../../Animations/FadeIn/FadeIn';
 
 export default function Hero({ setCursorContent }) {
+    const heroRef = useRef({})
 
+    useLayoutEffect(() => {
+        let ctx = gsap.context(() => {
+            const animation = fadeIn(heroRef.current)
+        });
+
+        return () => ctx.revert();
+
+    }, [])
 
     function handleMouseOver(e) {
         if (e.target.className === 'purple-text') {
@@ -18,7 +30,7 @@ export default function Hero({ setCursorContent }) {
     }
 
     return (
-        <section className="hero grey-bg">
+        <section className="hero" ref={heroRef}>
             <h1 className="pre-title">
                 Hello! My name is
             </h1>
