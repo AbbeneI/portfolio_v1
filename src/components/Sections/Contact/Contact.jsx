@@ -2,7 +2,9 @@ import './Contact.css';
 import { socialLinks } from "../../../data";
 import LinkedIn from "../../Icons/LinkedIn";
 import Email from "../../Icons/Email";
-import Codepen from '../../Icons/Codepen';
+import GitHub from '../../Icons/Github';
+import CodePen from '../../Icons/Codepen';
+import Medium from '../../Icons/Medium';
 
 export default function Contact({ }) {
 
@@ -17,6 +19,21 @@ export default function Contact({ }) {
                 <a className="button" href={socialLinks.linkedin} target="_blank" rel="noreferrer">
                     <LinkedIn />
                 </a>
+            </div>
+            <div className="mobile-container">
+                <p>Social Links:</p>
+                <div className="icon-container">
+                    <a className="button" href={socialLinks.github} target="_blank" rel="noreferrer" aria-label="Link to Ian's Github page" >
+                        <GitHub />
+                    </a>
+                    <a className="button" href={socialLinks.codepen} target="_blank" rel="noreferrer" aria-label="Link to Ian's Codepen page" >
+                        <CodePen />
+                    </a>
+                    <a className="button" href={socialLinks.medium} target="_blank" rel="noreferrer" aria-label="Link to Ian's Medium page" >
+                        <Medium />
+                    </a>
+                </div>
+
             </div>
 
         </section>

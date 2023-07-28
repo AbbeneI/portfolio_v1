@@ -20,6 +20,7 @@ export default function Navbar() {
                 <Link
                     className="nav-link"
                     aria-label="Scroll to top of site"
+                    activeClass="active-nav-link"
                     to="hero"
                     href="#hero"
                     spy={true}

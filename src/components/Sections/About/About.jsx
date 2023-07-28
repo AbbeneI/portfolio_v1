@@ -1,10 +1,13 @@
 import './About.css';
 import Headshot from './photo.jpg'
+import Triforce from '../../Icons/Triforce'
+// import Triforce from './Triforce.png'
 
 export default function About({ setCursorContent }) {
     function handleMouseOver(e) {
+        console.log(Triforce)
         if (e.target.id === 'hyrule') {
-            setCursorContent('triforce')
+            setCursorContent(<Triforce />)
         }
         else {
             setCursorContent('')
@@ -26,7 +29,7 @@ export default function About({ setCursorContent }) {
                         My primary objective is to create accessible and responsive products for the web. Drawing from my background in user experience and design, I bring a multidisciplinary approach to every project I work on. This ensures that the end result not only meets technical requirements but also serves users.
                     </p>
                     <p>
-                        When I'm not immersed in coding, I enjoy making art, <span id="hyrule" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>exploring Hyrule</span>, and playing a <span id="percy">never-ending game of fetch with my Husky mix Percy.</span>
+                        When I'm not immersed in coding, I enjoy making art, <span id="hyrule" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>exploring Hyrule</span>, and playing a never-ending game of fetch with my Husky mix Percy.
                     </p>
                 </div>
                 <div className='about-headshot'><img className="headshot" src={Headshot} alt="Professional photo of Ian Abbene" /><div className='about-headshot-banner'></div></div>
