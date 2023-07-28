@@ -14,14 +14,9 @@
 
     --dark-grey-light: #817294;
 
-    /* it's this color ^^ #9682b0 */
-    /* --dark-grey-light: #5c5c5cc1; */
-
     /* Filters for SVGs */
     --lavender-filter: invert(77%) sepia(9%) saturate(3012%) hue-rotate(211deg) brightness(102%) contrast(99%);
     --dark-grey-light-filter: invert(59%) sepia(6%) saturate(1955%) hue-rotate(224deg) brightness(91%) contrast(80%);
-
-
 
     --text-light: #d7d7d7;
     --text-dark: #8c7d9f;
