@@ -34,6 +34,7 @@ export default function Navbar() {
                     aria-label="Scroll to Ian's work"
                     activeClass="active-nav-link"
                     to="projects"
+                    href="#projects"
                     spy={true}
                     smooth={false}
                     offset={-70}
@@ -45,6 +46,7 @@ export default function Navbar() {
                     aria-label="Scroll to About section"
                     activeClass="active-nav-link"
                     to="about"
+                    href="#about"
                     spy={true}
                     smooth={false}
                     offset={-70}
