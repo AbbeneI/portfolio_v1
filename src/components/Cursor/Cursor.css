@@ -84,5 +84,6 @@
     --x: 50px;
     width: var(--x);
     height: var(--x);
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
 }
