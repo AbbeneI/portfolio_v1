@@ -24,8 +24,9 @@ export default function NavbarRight() {
             fadeIn(linkedInRef.current, { delay: 0.1 });
             fadeIn(gitHubRef.current, { delay: 0.2 });
             fadeIn(codePenRef.current, { delay: 0.3 });
-            fadeIn(emailRef.current, { delay: 0.4 });
-            fadeIn(mediumRef.current, { delay: 0.5 });
+            fadeIn(mediumRef.current, { delay: 0.4 });
+            fadeIn(emailRef.current, { delay: 0.5 });
+
         });
 
         return () => ctx.revert();
