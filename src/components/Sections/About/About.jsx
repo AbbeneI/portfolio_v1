@@ -1,7 +1,11 @@
 import './About.css';
 import Headshot from './photo.jpg'
 import Triforce from '../../Icons/Triforce'
-// import Triforce from './Triforce.png'
+import Medium from '../../Icons/Medium';
+import GitHub from '../../Icons/Github';
+import CodePen from '../../Icons/Codepen';
+import { socialLinks } from "../../../data";
+
 
 export default function About({ setCursorContent }) {
     function handleMouseOver(e) {
@@ -32,8 +36,27 @@ export default function About({ setCursorContent }) {
                         When I'm not immersed in coding, I enjoy making art, <span id="hyrule" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>exploring Hyrule</span>, and playing a never-ending game of fetch with my Husky mix Percy.
                     </p>
                 </div>
-                <div className='about-headshot'><img className="headshot" src={Headshot} alt="Professional photo of Ian Abbene" /><div className='about-headshot-banner'></div></div>
+                <div className='about-headshot'>
+                    <img className="headshot" src={Headshot} alt="Professional photo of Ian Abbene" />
+                    <div className='about-headshot-banner'>
+                    </div>
+                </div>
+
+                <div className="mobile-container">
+                    <div className="icon-container">
+                        <a className="button" href={socialLinks.github} target="_blank" rel="noreferrer" aria-label="Link to Ian's Github page" >
+                            <GitHub />
+                        </a>
+                        <a className="button" href={socialLinks.codepen} target="_blank" rel="noreferrer" aria-label="Link to Ian's Codepen page" >
+                            <CodePen />
+                        </a>
+                        <a className="button" href={socialLinks.medium} target="_blank" rel="noreferrer" aria-label="Link to Ian's Medium page" >
+                            <Medium />
+                        </a>
+                    </div>
+                </div>
             </div>
+
         </section >
     )
 }
