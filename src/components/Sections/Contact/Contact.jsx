@@ -21,7 +21,6 @@ export default function Contact({ }) {
                 </a>
             </div>
             <div className="mobile-container">
-                <p>Social Links:</p>
                 <div className="icon-container">
                     <a className="button" href={socialLinks.github} target="_blank" rel="noreferrer" aria-label="Link to Ian's Github page" >
                         <GitHub />

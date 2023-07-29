@@ -65,7 +65,6 @@ nav div {
     align-items: center;
     gap: 5vw;
 
-    background: var(--dark-grey);
     backdrop-filter: blur(10px);
     border-radius: 5rem;
 }
