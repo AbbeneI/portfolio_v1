@@ -42,19 +42,6 @@ export default function About({ setCursorContent }) {
                     </div>
                 </div>
 
-                <div className="mobile-container">
-                    <div className="icon-container">
-                        <a className="button" href={socialLinks.github} target="_blank" rel="noreferrer" aria-label="Link to Ian's Github page" >
-                            <GitHub />
-                        </a>
-                        <a className="button" href={socialLinks.codepen} target="_blank" rel="noreferrer" aria-label="Link to Ian's Codepen page" >
-                            <CodePen />
-                        </a>
-                        <a className="button" href={socialLinks.medium} target="_blank" rel="noreferrer" aria-label="Link to Ian's Medium page" >
-                            <Medium />
-                        </a>
-                    </div>
-                </div>
             </div>
 
         </section >
