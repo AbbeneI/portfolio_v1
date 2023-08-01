@@ -60,6 +60,7 @@ export const projects = [
         description: "A <span class='purple-text'>digital library application</span> built with the Google Books API and Google OAuth. The app uses Express, Node.js and Javascript to connect to a MongoDB database and store books the user selects via the <a href='https://developers.google.com/books' target='_blank' rel='noreferrer'>Google Books API</a> in bookshelves.",
         tags: ['Google Books API', 'Python', 'Node.js', 'Postman', 'Express', 'MongoDB', 'Figma'],
         image: '',
+        isUpdating: true,
         links: {
             deployed: "https://mylibrary.fly.dev/",
             github: "https://github.com/AbbeneI/ReadMe",

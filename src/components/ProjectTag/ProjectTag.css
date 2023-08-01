@@ -1,5 +1,4 @@
 .proj-tag {
-    --purple: #9b87b1;
     border: 1px solid var(--purple);
     padding: 1vmin 1.5vmin;
     border-radius: 1vmin;
