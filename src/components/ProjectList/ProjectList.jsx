@@ -7,10 +7,8 @@ export default function projectList({ projectData }) {
     )
 
     return (
-
         <div className="project-list">
             {projectsList}
         </div>
-
     )
 }

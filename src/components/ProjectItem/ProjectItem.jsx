@@ -28,10 +28,14 @@ export default function ProjectItem({ project, idx }) {
     return (
         <div className={`proj-item ${project.title}`} ref={projectRef}>
             <div className="proj-grid">
+                <div className="proj-num">
+                    <span className="purple-text">0{idx + 1}</span>
+                </div>
+                {project.isUpdating ?
+                    <div className="proj-update"><p>Update in progress</p> <div class="blinker"></div></div>
+                    : <></>}
                 <div className="proj-info">
-                    <div className="proj-num">
-                        <span className="purple-text">0{idx + 1}</span>
-                    </div>
+
                     <div className="proj-links-container">
                         <h3>
                             {project.title}
