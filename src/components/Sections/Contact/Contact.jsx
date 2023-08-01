@@ -13,10 +13,10 @@ export default function Contact({ }) {
             <h2 className="section-title">Contact</h2>
             <p>You can reach me by email, or connect with me on LinkedIn.</p>
             <div className="icon-container">
-                <a className="button" href="mailto:ianabbene@gmail.com?subject=Hello! ✋" target="_blank" rel="noreferrer">
+                <a className="button" href="mailto:ianabbene@gmail.com?subject=Hello! ✋" target="_blank" rel="noreferrer" aria-label="Send Ian an email">
                     <Email />
                 </a>
-                <a className="button" href={socialLinks.linkedin} target="_blank" rel="noreferrer">
+                <a className="button" href={socialLinks.linkedin} target="_blank" rel="noreferrer" aria-label="Link to Ian's LinkedIn page">
                     <LinkedIn />
                 </a>
             </div>
