@@ -38,6 +38,10 @@
         padding: 0.5rem 0;
     }
 
+    div.proj-update {
+        margin-right: 0;
+    }
+
 }
 
 @keyframes blink {
@@ -183,6 +187,8 @@
     height: 80%;
     width: fit-content;
     padding: 0 1rem;
+    grid-row: 1/1;
+    grid-column: 1/2;
 
     text-transform: uppercase;
 
