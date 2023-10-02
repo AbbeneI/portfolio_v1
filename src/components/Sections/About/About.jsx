@@ -1,11 +1,6 @@
 import './About.css';
 import Headshot from './photo.jpg'
 import Triforce from '../../Icons/Triforce'
-import Medium from '../../Icons/Medium';
-import GitHub from '../../Icons/Github';
-import CodePen from '../../Icons/Codepen';
-import { socialLinks } from "../../../data";
-
 
 export default function About({ setCursorContent }) {
     function handleMouseOver(e) {

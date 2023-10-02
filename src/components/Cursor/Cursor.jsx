@@ -1,5 +1,5 @@
 import './Cursor.css';
-import { forwardRef, useImperativeHandle, useRef, useEffect } from "react";
+import { forwardRef, useImperativeHandle, useRef } from "react";
 import { gsap } from 'gsap';
 
 export const Cursor = forwardRef((props, ref) => {
@@ -17,20 +17,13 @@ export const Cursor = forwardRef((props, ref) => {
         };
     }, []);
 
-    useEffect(() => {
-        function setContent() {
-            props.setCursorContent('new state')
-        }
-        function setClassList(list) {
-            props.setCursorClassList(list)
-        }
-    }, [props])
-
     return (
-        (content === '' ?
-            <div className={"cursor " + classList} ref={el}></div>
-            :
-            <div className={`cursor content ${classList}`} ref={el}>{content}</div>
-        )
+        <div className="c cursor-center" ref={el}>
+            {(content === '' ?
+                <div className={"cursor " + classList}></div>
+                :
+                <div className={`cursor content ${classList}`} >{content}</div>
+            )}
+        </div>
     );
 })

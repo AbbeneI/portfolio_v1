@@ -20,9 +20,6 @@ gsap.registerPlugin(ScrollTrigger);
 function App() {
   const appRef = useRef(null)
   const cursorRef = useRef(null)
-  const heroRef = useRef({});
-  const aboutRef = useRef(null);
-  const projectsRef = useRef(null);
 
   const [cursorContent, setCursorContent] = useState('')
   const [cursorClassList, setCursorClassList] = useState('')
@@ -39,7 +36,7 @@ function App() {
   useLayoutEffect(() => {
     // doesn't trigger a render!
     const onMove = (ev) => {
-      cursorRef.current.moveTo(ev.clientX - 10, ev.clientY - 10);
+      cursorRef.current.moveTo(ev.clientX, ev.clientY);
     };
 
     window.addEventListener("pointermove", onMove);
@@ -48,7 +45,7 @@ function App() {
   }, []);
 
   function handleMouseOver(e) {
-    if (e.target.nodeName === 'A' || e.target.nodeName === 'svg' || e.target.nodeName === 'path') {
+    if (e.target.nodeName === 'A' || e.target.nodeName === 'svg' || e.target.nodeName === 'path' || e.target.nodeName === 'IMG') {
       setCursorClassList('active');
     }
     else {
@@ -59,7 +56,6 @@ function App() {
   function handleMouseLeave() {
     setCursorClassList('');
   }
-
 
   return (
     <app ref={appRef}>
