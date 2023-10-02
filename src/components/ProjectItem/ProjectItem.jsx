@@ -32,7 +32,7 @@ export default function ProjectItem({ project, idx }) {
                     <span className="purple-text">0{idx + 1}</span>
                 </div>
                 {project.isUpdating ?
-                    <div className="proj-update"><p>Update in progress</p> <div class="blinker"></div></div>
+                    <div className="proj-update"><p>Update in progress</p> <div className="blinker"></div></div>
                     : <></>}
                 <div className="proj-info">
 

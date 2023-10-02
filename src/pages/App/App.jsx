@@ -1,6 +1,8 @@
-import { useEffect, useState, useRef, useLayoutEffect, forwardRef } from "react";
+import { useState, useRef, useLayoutEffect, useEffect } from "react";
+
 import './App.css';
 import '../../components/Navbar/Navbar.css'
+
 
 import Hero from '../../components/Sections/Hero/Hero.jsx';
 import Projects from '../../components/Sections/Projects/Projects.jsx';
@@ -28,9 +30,7 @@ function App() {
     let ctx = gsap.context(() => {
       fadeIn(appRef.current)
     });
-
     return () => ctx.revert();
-
   }, [])
 
   useLayoutEffect(() => {
@@ -58,7 +58,7 @@ function App() {
   }
 
   return (
-    <app ref={appRef}>
+    <div ref={appRef}>
       <header className="App-header" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
         <Navbar />
         <NavbarRight />
@@ -75,7 +75,7 @@ function App() {
       <footer>
         <Footer />
       </footer>
-    </app>
+    </div >
   );
 }
 
