@@ -70,6 +70,8 @@
 
 .proj-item:hover {
     filter: brightness(1.1);
+    transform: translateY(-5px);
+
 }
 
 .proj-grid {
@@ -105,6 +107,8 @@
     display: flex;
     flex-direction: column;
     gap: 3vmin;
+
+    transition: transform 0.2s ease;
 }
 
 .proj-info * {
